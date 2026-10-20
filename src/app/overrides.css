@@ -1,0 +1,75 @@
+/* Chỉnh riêng cho project, không sinh từ template. */
+
+/* Bỏ thanh đặt lịch nổi dưới đáy (JS vẫn cần phần tử #bbar nên chỉ ẩn) */
+.bbar{display:none!important}
+.foot{padding-bottom:calc(60px + env(safe-area-inset-bottom,0px))}
+
+/* Bỏ link "Xem đường đi trên Google Maps" ở phần Liên hệ */
+.ct-list a[href*="google.com/maps"]{display:none}
+
+/* Bỏ section "Quản lý đặt lịch" và link tới nó ở footer (JS vẫn cần #adm-* nên chỉ ẩn) */
+section:has(#adm-note), .foot a[href="#quan-ly"]{display:none}
+
+/* Thu hẹp khung nội dung (template gốc: 1280px) */
+.wrap{max-width:1120px}
+
+/* Bỏ mục "Tìm concept" trên menu */
+.nav-links a[href="#tim-concept"]{display:none}
+
+/* ---------- hiệu ứng cuộn (src/app/motion.tsx) ---------- */
+html.lenis{scroll-behavior:auto}
+.mv{opacity:0;translate:0 40px;scale:.98;transition:opacity .9s var(--ease) var(--mv-d,0ms),translate .9s var(--ease) var(--mv-d,0ms),scale .9s var(--ease) var(--mv-d,0ms)}
+.mv.mv-in{opacity:1;translate:0 0;scale:1}
+.card.mv,.plan.mv{transition:opacity .9s var(--ease) var(--mv-d,0ms),translate .9s var(--ease) var(--mv-d,0ms),scale .9s var(--ease) var(--mv-d,0ms),transform .45s var(--ease),box-shadow .45s}
+.cl img{scale:1.12;will-change:translate}
+.strip,.ct-pics img,.faq-side img,.quiz-photos img{overflow:hidden}
+.strip img{scale:1.15;will-change:translate}
+.nav{transition:box-shadow .3s,translate .45s var(--ease)}
+.nav.mv-hide{translate:0 -100%}
+.mv-progress{position:fixed;inset:0 0 auto;height:3px;z-index:70;background:linear-gradient(90deg,var(--pink),var(--blue));transform-origin:0 50%;scale:0 1;pointer-events:none}
+.mv-top{position:fixed;right:20px;bottom:24px;z-index:60;width:48px;height:48px;border:0;border-radius:50%;background:var(--pink);color:#fff;font:700 20px/1 var(--text);cursor:pointer;box-shadow:0 10px 24px rgba(255,95,162,.35);opacity:0;translate:0 20px;pointer-events:none;transition:opacity .3s,translate .4s var(--pop)}
+.mv-top.on{opacity:1;translate:0 0;pointer-events:auto}
+.mv-top:hover{translate:0 -3px}
+@media (prefers-reduced-motion:reduce){.mv{opacity:1;translate:none;scale:none}}
+
+/* ---------- hiệu ứng hero ---------- */
+/* ảnh ghép bồng bềnh + lệch theo chuột (--mx/--my do motion.tsx đặt, -1..1) */
+.collage{--mx:0;--my:0;perspective:1200px}
+.cl,.cl-tag{transition:translate .6s var(--ease)}
+.cl-1{animation:rise 1s .1s var(--ease) both,fl 7s 1.2s ease-in-out infinite;--dp:14}
+.cl-2{animation:rise 1s .35s var(--ease) both,fl 6s 1.4s ease-in-out infinite reverse;--dp:30}
+.cl-3{animation:rise 1s .5s var(--ease) both,fl 8s 1.6s ease-in-out infinite;--dp:24}
+.cl-tag{animation:rise 1s .8s var(--ease) both,fl 5s 1.9s ease-in-out infinite reverse;--dp:40}
+@keyframes fl{
+  0%,100%{translate:calc(var(--mx)*var(--dp)*1px) calc(var(--my)*var(--dp)*1px)}
+  50%{translate:calc(var(--mx)*var(--dp)*1px) calc(var(--my)*var(--dp)*1px - 12px)}
+}
+.collage::before{animation:blob 14s ease-in-out infinite;translate:calc(var(--mx)*-12px) calc(var(--my)*-12px);transition:translate .8s var(--ease)}
+@keyframes blob{
+  0%,100%{border-radius:40px}
+  33%{border-radius:60px 30px 70px 40px}
+  66%{border-radius:30px 70px 40px 60px}
+}
+.cl:hover{z-index:4}
+.cl img{transition:scale .8s var(--ease)}
+.cl:hover img{scale:1.2}
+/* ngôi sao lấp lánh */
+.hero-spark{position:absolute;z-index:5;color:var(--pink);pointer-events:none;font-size:var(--s,22px);animation:spark 3.2s var(--d,0s) ease-in-out infinite both}
+.hero-spark.b{color:var(--blue)}.hero-spark.y{color:var(--butter)}
+@keyframes spark{0%,100%{opacity:0;scale:.3;rotate:0deg}50%{opacity:1;scale:1;rotate:90deg}}
+/* vạch vàng quét dưới "bộ ảnh xịn" */
+.hero h1 .hl{background-size:0% 100%;background-repeat:no-repeat;animation:hl 1s .9s var(--ease) forwards}
+@keyframes hl{to{background-size:100% 100%}}
+/* nút chính có vệt sáng lướt */
+.hero .btn-pink::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);translate:-120% 0;animation:shine 3.5s 1.8s ease-in-out infinite}
+@keyframes shine{0%,60%{translate:-120% 0}100%{translate:120% 0}}
+/* chip thông tin nhún nhẹ khi rê chuột */
+.hero-facts span{transition:translate .3s var(--pop),box-shadow .3s}
+.hero-facts span:hover{translate:0 -3px;box-shadow:var(--sh)}
+@media (prefers-reduced-motion:reduce){.hero h1 .hl{background-size:100% 100%}.hero-spark{display:none}}
+
+/* Footer gọn hơn (template: chữ tới 200px, padding 60px) */
+.foot{padding-block:36px calc(36px + env(safe-area-inset-bottom,0px))}
+.foot .wrap{gap:18px}
+.foot-name{font-size:clamp(44px,6vw,84px)}
+.foot-row{font-size:13px}

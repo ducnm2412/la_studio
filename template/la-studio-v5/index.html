@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body>
+<title>La studio Xinh</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="La studio – tiệm ảnh nhà La ở TP.HCM. 9 concept dựng sẵn, trang phục và makeup trọn gói, từ 699k.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&display=swap">
+<style>/* Layout: version 2's palette made premium — cream ground, big photos, soft pink and denim accents, rounded corners, light shadows; a booking bar always within reach. */
+:root{
+  --bg:#FFFAF5; --surface:#FFFFFF; --ink:#1E1B3A; --ink-2:#5E5A78;
+  --pink:#FF5FA2; --pink-d:#E2407F; --pink-soft:#FFE4EF; --blue:#3D6BFF; --blue-soft:#E6EDFF; --butter:#FFE27A; --butter-soft:#FFF6D6;
+  --line:#EFE6DE; --on:#FFFFFF;
+  --sh:0 18px 50px rgba(30,27,58,.10); --sh-s:0 6px 18px rgba(30,27,58,.08);
+  --display:"Bricolage Grotesque", "Arial", system-ui, sans-serif;
+  --text:"Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --gl:max(16px, env(safe-area-inset-left, 0px)); --gr:max(16px, env(safe-area-inset-right, 0px));
+  --ease:cubic-bezier(.2,.8,.2,1); --pop:cubic-bezier(.34,1.45,.64,1);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#16142A; --surface:#201D3A; --ink:#F8F1EC; --ink-2:#BDB7D6; --pink:#FF77B0; --pink-d:#FF8FBE; --pink-soft:#3A2240; --blue:#7A97FF; --blue-soft:#232A55; --butter:#FFE27A; --butter-soft:#3A3420; --line:#2E2A4C; --on:#16142A;
+  --sh:0 18px 50px rgba(0,0,0,.35); --sh-s:0 6px 18px rgba(0,0,0,.3); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#16142A; --surface:#201D3A; --ink:#F8F1EC; --ink-2:#BDB7D6; --pink:#FF77B0; --pink-d:#FF8FBE; --pink-soft:#3A2240; --blue:#7A97FF; --blue-soft:#232A55; --butter:#FFE27A; --butter-soft:#3A3420; --line:#2E2A4C; --on:#16142A;
+  --sh:0 18px 50px rgba(0,0,0,.35); --sh-s:0 6px 18px rgba(0,0,0,.3); color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--text);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3{font-family:var(--display);font-weight:700;font-stretch:92%;letter-spacing:-.03em;line-height:1.05;margin:0;text-wrap:balance}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:8px}
+::selection{background:var(--butter);color:#1E1B3A}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.band{padding-left:var(--gl);padding-right:var(--gr)}
+.wrap{max-width:1280px;margin:0 auto}
+.sec{padding-block:clamp(72px,9vw,130px)}
+.h2{font-size:clamp(40px,5.4vw,80px)}
+.lead{font-size:clamp(17px,1.4vw,20px);color:var(--ink-2);max-width:34em}
+.hl{color:#1E1B3A;background:linear-gradient(transparent 58%,var(--butter) 58%,var(--butter) 92%,transparent 92%);padding:0 .06em}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px;margin-bottom:clamp(28px,4vw,48px)}
+.head .lead{margin-top:14px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 24px;border-radius:999px;border:0;font:600 16px/1 var(--text);text-decoration:none;cursor:pointer;transition:transform .25s var(--pop),box-shadow .25s,background-color .2s;color:var(--ink);position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(.96)}
+.btn-pink{background:var(--pink);color:#fff;box-shadow:0 10px 24px rgba(255,95,162,.35)}
+.btn-pink:hover{box-shadow:0 14px 30px rgba(255,95,162,.45)}
+.btn-ghost{background:var(--surface);box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-sm{min-height:42px;padding:0 16px;font-size:14px}
+.ripple{position:absolute;border-radius:50%;background:currentColor;opacity:.22;transform:scale(0);animation:rip .6s ease-out forwards;pointer-events:none}
+@keyframes rip{to{transform:scale(4);opacity:0}}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);transition:box-shadow .3s}
+.nav.scrolled{box-shadow:0 1px 0 var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:20px;min-height:72px}
+.brand{display:flex;align-items:center;gap:10px;font:700 24px/1 var(--display);letter-spacing:-.04em;text-decoration:none;margin-right:auto;white-space:nowrap}
+.brand i{width:30px;height:30px;border-radius:50%;background:var(--pink);display:grid;place-items:center;color:#fff;font-style:normal;font-size:14px}
+.nav-links{display:flex;gap:4px}
+.nav-links a{text-decoration:none;font-weight:500;font-size:15px;padding:9px 14px;border-radius:999px;transition:background-color .2s}
+.nav-links a:hover{background:var(--pink-soft)}
+
+/* hero */
+.hero{padding-block:clamp(16px,3vw,40px) clamp(50px,6vw,90px)}
+.hero .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,4vw,64px);align-items:center}
+.hero-copy{display:grid;gap:24px;min-width:0}
+.hero h1{font-size:clamp(50px,6.6vw,100px);line-height:1}
+.hero h1 .w{display:inline-block;animation:up .8s var(--ease) both}
+.hero .lead{animation:up .8s .35s var(--ease) both}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero .cta-row{animation:up .8s .5s var(--ease) both}
+.hero-facts{display:flex;flex-wrap:wrap;gap:8px;animation:up .8s .65s var(--ease) both}
+.hero-facts span{background:var(--surface);box-shadow:var(--sh-s);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:500}
+.hero-facts b{color:var(--pink-d)}
+@keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.collage{position:relative;height:clamp(480px,48vw,680px)}
+.collage::before{content:"";position:absolute;inset:6% 0 0 14%;border-radius:40px;background:var(--pink-soft)}
+.cl{position:absolute;overflow:hidden;border-radius:30px;box-shadow:var(--sh);animation:rise 1s var(--ease) both}
+.cl img{width:100%;height:100%;object-fit:cover}
+.cl-1{left:22%;top:0;width:52%;height:88%;animation-delay:.1s}
+.cl-2{left:0;bottom:4%;width:34%;height:46%;animation-delay:.35s}
+.cl-3{right:0;top:16%;width:30%;height:44%;animation-delay:.5s}
+.cl-tag{position:absolute;right:6%;bottom:6%;z-index:3;background:var(--surface);border-radius:20px;box-shadow:var(--sh);padding:14px 16px;display:flex;gap:12px;align-items:center;animation:rise 1s .8s var(--ease) both}
+.cl-tag img{width:46px;height:46px;border-radius:50%;object-fit:cover}
+.cl-tag b{display:block;font-size:15px}
+.cl-tag small{color:var(--ink-2);font-size:13px}
+@keyframes rise{from{opacity:0;transform:translateY(40px) scale(.96)}to{opacity:1;transform:none}}
+
+/* ticker */
+.tick{background:var(--blue);color:#fff;overflow:hidden;padding-block:16px}
+.tick-in{display:flex;width:max-content;animation:mq 40s linear infinite}
+.tick span{display:flex;align-items:center;gap:20px;padding-right:20px;font:600 clamp(20px,2.2vw,30px)/1 var(--display);white-space:nowrap}
+.tick img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* why + polaroids */
+.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:center}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.fact{background:var(--surface);border-radius:24px;padding:22px;box-shadow:var(--sh-s);display:grid;gap:6px;transition:transform .35s var(--pop)}
+.fact:hover{transform:translateY(-4px)}
+.fact b{font:700 clamp(30px,3vw,42px)/1 var(--display);color:var(--pink-d);letter-spacing:-.03em}
+.fact h3{font-size:19px;font-family:var(--text);letter-spacing:-.01em}
+.fact p{font-size:15px;color:var(--ink-2)}
+.board{position:relative;overflow:hidden;height:clamp(460px,42vw,560px);touch-action:none;border-radius:36px;background:var(--butter-soft)}
+.pol{position:absolute;width:clamp(150px,14vw,210px);background:#fff;padding:10px 10px 36px;border-radius:6px;box-shadow:0 14px 30px rgba(30,27,58,.18);cursor:grab;user-select:none;transition:box-shadow .2s}
+.pol img{width:100%;aspect-ratio:4/5;object-fit:cover;pointer-events:none;border-radius:2px}
+.pol figcaption{position:absolute;left:0;right:0;bottom:9px;text-align:center;font:600 14px/1 var(--text);color:#1E1B3A}
+.pol.drag{cursor:grabbing;box-shadow:0 26px 50px rgba(30,27,58,.28)}
+.pol.move{transition:left .7s var(--pop),top .7s var(--pop),rotate .7s var(--pop)}
+.board-hint{position:absolute;left:18px;top:16px;z-index:30;display:flex;gap:10px;align-items:center;font-size:14px;color:#5E5A78}
+
+/* concepts */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:0;background:var(--surface);box-shadow:inset 0 0 0 1.5px var(--line);color:var(--ink);border-radius:999px;padding:10px 16px;font:500 15px/1 var(--text);cursor:pointer;transition:background-color .2s,color .2s}
+.chip:hover{background:var(--pink-soft)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);box-shadow:none}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px}
+.card{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:3/4;background:var(--pink-soft);box-shadow:var(--sh-s);transition:transform .45s var(--ease),box-shadow .45s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--sh)}
+.card-imgs{position:absolute;inset:0;cursor:pointer}
+.card-imgs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s,transform 1.2s var(--ease)}
+.card-imgs img.on{opacity:1}
+.card:hover .card-imgs img.on{transform:scale(1.04)}
+.card-dots{position:absolute;top:14px;left:14px;right:14px;display:flex;gap:4px;z-index:2}
+.card-dots i{flex:1;height:3px;border-radius:3px;background:rgba(255,255,255,.45);transition:background-color .3s}
+.card-dots i.on{background:#fff}
+.price-tag{position:absolute;top:28px;right:14px;z-index:2;background:#fff;color:#1E1B3A;border-radius:999px;padding:7px 12px;font-weight:700;font-size:14px;box-shadow:var(--sh-s)}
+.card-info{position:absolute;inset:auto 0 0;z-index:2;padding:70px 18px 18px;background:linear-gradient(transparent,rgba(20,16,40,.78));color:#fff;display:grid;gap:4px}
+.card-info h3{font-size:30px}
+.card-info p{font-size:14px;opacity:.9}
+.card-info .cta-row{margin-top:10px;gap:8px}
+.card-info .btn-ghost{background:rgba(255,255,255,.18);color:#fff;box-shadow:none}
+
+/* photo strip */
+.strip{display:grid;grid-template-columns:repeat(5,1fr);height:clamp(260px,30vw,460px)}
+.strip img{width:100%;height:100%;object-fit:cover;transition:filter .4s}
+.strip:hover img{filter:saturate(.7) brightness(.85)}
+.strip img:hover{filter:none}
+
+/* quiz */
+.quiz{background:var(--blue-soft)}
+.quiz .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,80px);align-items:center}
+.quiz-photos{position:relative;height:clamp(300px,32vw,440px);margin-top:30px}
+.quiz-photos img{position:absolute;width:46%;aspect-ratio:3/4;object-fit:cover;border-radius:24px;box-shadow:var(--sh)}
+.quiz-photos img:nth-child(1){left:0;top:8%;rotate:-6deg}
+.quiz-photos img:nth-child(2){right:4%;top:0;rotate:5deg}
+.quiz-photos img:nth-child(3){left:27%;bottom:0;width:40%;rotate:-1deg}
+.quiz-card{background:var(--surface);border-radius:32px;box-shadow:var(--sh);padding:clamp(22px,3vw,38px);display:grid;gap:20px;min-height:400px;align-content:start}
+.q-step{font-weight:600;font-size:14px;display:flex;gap:10px;align-items:center;color:var(--ink-2)}
+.q-dots{display:flex;gap:6px}
+.q-dots i{width:28px;height:6px;border-radius:99px;background:var(--line);transition:background-color .3s}
+.q-dots i.on{background:var(--pink)}
+.q-title{font:700 clamp(28px,2.8vw,40px)/1.1 var(--display);letter-spacing:-.03em}
+.q-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.q-opt{display:flex;align-items:center;gap:12px;text-align:left;background:var(--bg);color:var(--ink);border:0;box-shadow:inset 0 0 0 1.5px var(--line);border-radius:18px;padding:10px 12px;font:600 15px/1.3 var(--text);cursor:pointer;transition:transform .25s var(--pop),background-color .2s}
+.q-opt img{width:52px;height:52px;border-radius:14px;object-fit:cover;flex:none}
+.q-opt:hover{transform:translateY(-2px);background:var(--pink-soft)}
+.q-anim{animation:qIn .45s var(--ease) both}
+@keyframes qIn{from{opacity:0;transform:translateX(30px)}to{opacity:1;transform:none}}
+.q-res{display:grid;grid-template-columns:140px 1fr;gap:20px;align-items:center}
+.q-res img{width:140px;aspect-ratio:3/4;object-fit:cover;border-radius:20px;animation:rise .7s var(--pop) both}
+.q-res p{color:var(--ink-2);font-size:15px}
+.q-res .q-title{color:var(--ink)}
+
+/* pricing */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.plan{background:var(--surface);border-radius:30px;box-shadow:var(--sh-s);padding:clamp(24px,2.6vw,34px);display:grid;gap:18px;align-content:start;position:relative;transition:transform .35s var(--ease),box-shadow .35s}
+.plan:hover{transform:translateY(-6px);box-shadow:var(--sh)}
+.plan.star{background:var(--pink-soft);box-shadow:var(--sh)}
+.plan h3{font-size:30px}
+.plan-price{font:700 clamp(40px,4vw,56px)/1 var(--display);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.plan-price small{display:block;font:500 14px/1.6 var(--text);color:var(--ink-2);letter-spacing:0;margin-top:6px}
+.plan ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:15px}
+.plan li{display:flex;gap:10px}
+.plan li::before{content:"✓";flex:none;width:20px;height:20px;margin-top:2px;border-radius:50%;background:var(--butter);color:#1E1B3A;font-size:11px;font-weight:800;display:grid;place-items:center}
+.badge{position:absolute;top:22px;right:22px;background:var(--pink);color:#fff;font-weight:700;font-size:13px;padding:6px 12px;border-radius:999px}
+.notes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}
+.notes p{border-radius:20px;padding:16px 18px;font-size:15px;color:var(--ink-2);box-shadow:inset 0 0 0 1.5px var(--line)}
+.notes b{display:block;color:var(--ink)}
+
+/* gallery */
+.gallery{columns:3 280px;column-gap:16px;margin-top:24px}
+.gallery button{display:block;width:100%;margin:0 0 16px;padding:0;border:0;border-radius:22px;overflow:hidden;background:var(--pink-soft);cursor:zoom-in;break-inside:avoid}
+.gallery img{width:100%;transition:transform .7s var(--ease)}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery .more{display:none}.gallery.open .more{display:block}
+.lb{border:0;padding:0;background:transparent;max-width:min(92vw,900px);max-height:92vh;overflow:visible}
+.lb::backdrop{background:rgba(20,16,40,.82)}
+.lb[open]{animation:rise .4s var(--ease)}
+.lb img{max-height:86vh;width:auto;border-radius:22px}
+.lb img.swap{animation:qIn .35s var(--ease)}
+.lb-close{position:absolute;top:12px;right:12px}
+.lb-nav{position:absolute;top:50%;translate:0 -50%;width:50px;height:50px;border-radius:50%;border:0;background:#fff;color:#1E1B3A;font:600 26px/1 var(--text);cursor:pointer;box-shadow:var(--sh-s)}
+.lb-prev{left:12px}.lb-next{right:12px}
+.lb-count{position:absolute;left:14px;bottom:14px;background:#fff;color:#1E1B3A;border-radius:999px;padding:6px 14px;font-weight:600;font-size:14px}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,80px)}
+.faq-side{display:grid;gap:24px;align-content:start}
+.faq-side img{width:min(100%,380px);aspect-ratio:4/5;object-fit:cover;border-radius:30px}
+.faq-list{display:grid;gap:10px}
+.faq details{background:var(--surface);border-radius:22px;padding:2px 22px;box-shadow:var(--sh-s)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:600;font-size:18px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--pink-soft);color:var(--pink-d);font:600 20px/1 var(--text);transition:transform .35s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 18px;color:var(--ink-2)}
+
+/* booking wizard */
+.book .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4vw,60px);align-items:start}
+.book-side{display:grid;gap:22px;position:sticky;top:100px}
+.sum{background:var(--surface);border-radius:28px;box-shadow:var(--sh);overflow:hidden}
+.sum img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.sum-in{padding:18px 20px 22px;display:grid;gap:4px}
+.sum small{font-weight:600;font-size:13px;color:var(--pink-d)}
+.pick-name{font:700 28px/1.1 var(--display);letter-spacing:-.03em}
+.pick-meta{color:var(--ink-2);font-size:15px}
+.pick-total{font:700 24px/1.2 var(--display);margin-top:6px;font-variant-numeric:tabular-nums}
+.sum.bump{animation:bump .45s var(--pop)}
+@keyframes bump{40%{transform:scale(1.02)}}
+form.bk,.done{background:var(--surface);border-radius:30px;box-shadow:var(--sh);padding:clamp(20px,3vw,36px);display:grid;gap:20px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;list-style:none;margin:0;padding:0}
+.steps li{display:grid;gap:8px;font-size:14px;font-weight:600;color:var(--ink-2)}
+.steps li::before{content:"";height:5px;border-radius:5px;background:var(--line);transition:background-color .3s}
+.steps li.on{color:var(--ink)}
+.steps li.on::before,.steps li.done::before{background:var(--pink)}
+.step{display:grid;gap:18px}
+.step.in{animation:qIn .4s var(--ease)}
+.step h3{font-size:26px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:grid;gap:8px;min-width:0}
+.field>label,.field legend{font-weight:600;font-size:15px;padding:0}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.field input,.field select,.field textarea{width:100%;font:16px/1.4 var(--text);color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:16px;padding:13px 15px;transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--pink);box-shadow:0 0 0 4px var(--pink-soft)}
+.field textarea{min-height:90px;resize:vertical}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{position:relative}
+.opts input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.opts span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;background:var(--bg);box-shadow:inset 0 0 0 1.5px var(--line);font-size:15px;font-weight:500;transition:background-color .2s,color .2s,transform .2s var(--pop)}
+.opts input:checked+span{background:var(--pink);color:#fff;box-shadow:none;transform:scale(1.03)}
+.opts input:focus-visible+span{outline:3px solid var(--blue);outline-offset:2px}
+.cpick{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cpick label{position:relative;cursor:pointer}
+.cpick input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.cpick span{display:grid;gap:6px;border-radius:16px;padding:6px 6px 10px;box-shadow:inset 0 0 0 1.5px var(--line);font-size:13px;font-weight:600;text-align:center;transition:box-shadow .2s,background-color .2s}
+.cpick img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:11px}
+.cpick input:checked+span{box-shadow:inset 0 0 0 2.5px var(--pink);background:var(--pink-soft)}
+.cpick input:focus-visible+span{outline:3px solid var(--blue);outline-offset:2px}
+.step-nav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.err{color:#D23C6E;font-weight:600;font-size:15px}
+.done h3{font-size:clamp(30px,3vw,42px)}
+.msg{white-space:pre-wrap;background:var(--pink-soft);border-radius:18px;padding:16px 18px;font-size:15px;user-select:all}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:80;width:100%;height:100%}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(30px,5vw,80px);align-items:center}
+.ct-list{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:20px}
+.ct-list li{display:grid;gap:4px}
+.ct-list b{font-size:14px;color:var(--ink-2);font-weight:500}
+.ct-big{font:700 clamp(28px,3vw,42px)/1.1 var(--display);letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.ct-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.ct-pics{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ct-pics img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:26px}
+.ct-pics img:nth-child(2){margin-top:40px}
+
+/* admin */
+.adm-stats{display:flex;flex-wrap:wrap;gap:8px}
+.adm-stats span{background:var(--surface);box-shadow:var(--sh-s);border-radius:999px;padding:7px 14px;font-size:14px;font-weight:500;font-variant-numeric:tabular-nums}
+.adm-scroll{overflow-x:auto;background:var(--surface);border-radius:24px;box-shadow:var(--sh-s);margin-top:16px}
+table.adm{width:100%;min-width:860px;border-collapse:collapse;font-size:15px}
+.adm th,.adm td{padding:14px 16px;text-align:left;vertical-align:top}
+.adm thead th{font-weight:600;color:var(--ink-2);font-size:14px}
+.adm tbody tr:nth-child(odd){background:var(--bg)}
+.adm select{font:inherit;color:inherit;background:var(--pink-soft);border:0;border-radius:999px;padding:6px 10px}
+.st{display:inline-block;border-radius:999px;padding:4px 12px;font-weight:600;font-size:13px}
+.st-new{background:var(--pink-soft);color:var(--pink-d)}.st-ok{background:#DDF5E6;color:#1F6B3A}.st-done{background:var(--butter-soft);color:var(--ink)}.st-cancel{background:var(--line);color:var(--ink-2)}
+.adm-empty{padding:40px 24px;text-align:center;color:var(--ink-2)}
+.del{background:transparent;border:0;color:#D23C6E;font:600 14px var(--text);cursor:pointer;padding:6px}
+.muted{color:var(--ink-2)}
+
+/* footer */
+.foot{background:var(--ink);color:var(--bg);padding-block:60px calc(120px + env(safe-area-inset-bottom,0px))}
+.foot .wrap{display:grid;gap:30px}
+.foot-name{font:700 clamp(70px,14vw,200px)/.9 var(--display);letter-spacing:-.05em}
+.foot-name span{color:var(--pink)}
+.foot-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px;opacity:.85}
+.foot nav{display:flex;flex-wrap:wrap;gap:8px 20px}
+.foot a{text-decoration:none;font-weight:500}
+.foot a:hover{color:var(--pink)}
+
+/* booking bar */
+.bbar{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translate(-50%,0);z-index:55;width:min(720px,calc(100% - 24px));background:var(--surface);border-radius:22px;box-shadow:0 18px 50px rgba(30,27,58,.22);padding:8px 8px 8px 8px;display:flex;align-items:center;gap:12px;transition:transform .45s var(--ease),opacity .3s}
+.bbar.off{transform:translate(-50%,140%);opacity:0;pointer-events:none}
+.bbar img{width:48px;height:48px;border-radius:14px;object-fit:cover;flex:none}
+.bbar-info{min-width:0;flex:1;line-height:1.25}
+.bbar-info b{display:block;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bbar-info span{font-size:14px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.bbar .chat{min-height:44px;padding:0 14px;border-radius:14px;background:var(--bg);display:inline-flex;align-items:center;font-weight:600;font-size:14px;text-decoration:none}
+.bbar .chat.z{background:#0068FF;color:#fff}
+.bbar .btn{min-height:48px;border-radius:16px}
+
+/* reveal */
+.js .pre{opacity:0;transform:translateY(34px)}
+.js .rv{transition:opacity .8s var(--ease),transform .8s var(--ease)}
+
+@media (max-width:1020px){
+  .nav-links{display:none}
+  .hero .wrap,.why .wrap,.quiz .wrap,.faq .wrap,.book .wrap,.contact .wrap{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  .plans,.notes{grid-template-columns:1fr}
+  .book-side{position:static}
+  .strip{grid-template-columns:repeat(3,1fr)}
+  .strip img:nth-child(n+4){display:none}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .hero h1{font-size:clamp(42px,12vw,58px)}
+  .collage{height:440px}
+  .cards{grid-template-columns:1fr}
+  .card{aspect-ratio:4/5}
+  .facts{grid-template-columns:1fr 1fr}
+  .q-opts,.row2{grid-template-columns:1fr}
+  .q-res{grid-template-columns:96px 1fr}
+  .q-res img{width:96px}
+  .quiz-photos{display:none}
+  .gallery{columns:2;column-gap:10px}
+  .gallery button{margin-bottom:10px;border-radius:16px}
+  .pol{width:140px;padding:7px 7px 30px}
+  .board{height:420px}
+  .bbar .chat{display:none}
+  .bbar-info b{font-size:14px}
+  .chips.scroll{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:calc(-1 * var(--gr));padding-right:16px}
+  .chip{flex:none}
+  .cpick{grid-template-columns:repeat(3,1fr)}
+  .ct-pics img:nth-child(2){margin-top:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .pre{opacity:1;transform:none}
+}
+#dlg::backdrop{background:rgba(20,16,40,.7)}
+#dlg-photos button{padding:0;border:0;border-radius:14px;overflow:hidden;cursor:zoom-in;background:var(--pink-soft)}
+#dlg-photos button:first-child{grid-column:1/-1;border-radius:22px}
+#dlg-photos img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .5s var(--ease)}
+#dlg-photos button:first-child img{aspect-ratio:1/1}
+#dlg-photos button:hover img{transform:scale(1.05)}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<header class="nav band" id="nav"><div class="wrap">
+  <a class="brand" href="#top"><i aria-hidden="true">✦</i>La studio</a>
+  <nav class="nav-links" aria-label="Chính"><a href="#concept">Concept</a><a href="#tim-concept">Tìm concept</a><a href="#bang-gia">Bảng giá</a><a href="#anh">Ảnh</a><a href="#lien-he">Liên hệ</a></nav>
+  <a class="btn btn-pink btn-sm" href="#dat-lich">Đặt lịch</a>
+</div></header>
+
+<main id="top">
+<section class="hero band"><div class="wrap">
+  <div class="hero-copy">
+    <h1 class="words">Đôi mươi phải có <span class="hl">bộ ảnh xịn</span></h1>
+    <p class="lead">La studio có sẵn 9 concept dựng tay, trang phục và makeup trọn gói. Bạn chỉ việc đến, tạo dáng theo hướng dẫn và nhận ảnh gốc ngay trong ngày.</p>
+    <div class="cta-row"><a class="btn btn-pink" href="#dat-lich">Đặt lịch chụp</a><a class="btn btn-ghost" href="#concept">Xem 9 concept</a></div>
+    <p class="hero-facts"><span>Từ <b>699k</b> một buổi</span><span>Ảnh gốc <b>trong ngày</b></span><span>8:00–20:00 mỗi ngày</span></p>
+  </div>
+  <div class="collage" aria-label="Ảnh chụp tại La studio">
+    <div class="cl cl-1"><img src="img/p02.webp" alt="Concept Đôi mươi rực rỡ" fetchpriority="high"></div>
+    <div class="cl cl-2"><img src="img/p45.webp" alt="Concept Bóng bay đỏ"></div>
+    <div class="cl cl-3"><img src="img/p53.webp" alt="Concept Vườn rêu nàng thơ"></div>
+    <div class="cl-tag"><img src="img/p39.webp" alt=""><div><b>9 concept dựng sẵn</b><small>makeup + đồ có sẵn</small></div></div>
+  </div>
+</div></section>
+
+<div class="tick" aria-hidden="true"><div class="tick-in"><span>Concept cá nhân <img src="img/p05.webp" alt="" loading="lazy"></span><span>Sinh nhật đôi mươi <img src="img/p45.webp" alt="" loading="lazy"></span><span>Cổ trang <img src="img/p30.webp" alt="" loading="lazy"></span><span>Chân dung <img src="img/p27.webp" alt="" loading="lazy"></span><span>Nghệ thuật <img src="img/p53.webp" alt="" loading="lazy"></span><span>Chủ đề riêng <img src="img/p22.webp" alt="" loading="lazy"></span><span>Chụp đôi <img src="img/p33.webp" alt="" loading="lazy"></span><span>Concept cá nhân <img src="img/p05.webp" alt="" loading="lazy"></span><span>Sinh nhật đôi mươi <img src="img/p45.webp" alt="" loading="lazy"></span><span>Cổ trang <img src="img/p30.webp" alt="" loading="lazy"></span><span>Chân dung <img src="img/p27.webp" alt="" loading="lazy"></span><span>Nghệ thuật <img src="img/p53.webp" alt="" loading="lazy"></span><span>Chủ đề riêng <img src="img/p22.webp" alt="" loading="lazy"></span><span>Chụp đôi <img src="img/p33.webp" alt="" loading="lazy"></span></div></div>
+
+<section class="sec band" id="concept"><div class="wrap">
+  <div class="head"><div><h2 class="h2 rv">Chọn concept của bạn</h2><p class="lead rv">Rê chuột lên thẻ để xem thêm ảnh. Giá đã gồm makeup, trang phục và đạo cụ.</p></div></div>
+  <div class="chips scroll" role="group" aria-label="Lọc theo kiểu chụp" id="svc-chips"><button class="chip" aria-pressed="true" data-s="all">Tất cả</button><button class="chip" aria-pressed="false" data-s="ca-nhan">Concept cá nhân</button><button class="chip" aria-pressed="false" data-s="nghe-thuat">Nghệ thuật</button><button class="chip" aria-pressed="false" data-s="co-trang">Cổ trang</button><button class="chip" aria-pressed="false" data-s="chan-dung">Chân dung</button><button class="chip" aria-pressed="false" data-s="chu-de">Chủ đề riêng</button></div>
+  <div class="cards" id="cards"><article class="card rv" data-svc="ca-nhan">
+  <div class="card-imgs" data-detail-img="doi-muoi"><img src="img/p04.webp" alt="Đôi mươi rực rỡ, ảnh 1" class="on" loading="lazy"><img src="img/p02.webp" alt="Đôi mươi rực rỡ, ảnh 2" loading="lazy"><img src="img/p05.webp" alt="Đôi mươi rực rỡ, ảnh 3" loading="lazy"><img src="img/p07.webp" alt="Đôi mươi rực rỡ, ảnh 4" loading="lazy"><img src="img/p00.webp" alt="Đôi mươi rực rỡ, ảnh 5" loading="lazy"></div>
+  <div class="card-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  <span class="price-tag">từ 1.199k</span>
+  <div class="card-info"><h3>Đôi mươi rực rỡ</h3><p>Concept cá nhân · sinh nhật</p>
+  <div class="cta-row"><a class="btn btn-pink btn-sm" href="#dat-lich" data-pick="doi-muoi">Đặt concept này</a><button class="btn btn-ghost btn-sm" type="button" data-detail="doi-muoi">Chi tiết</button></div></div>
+</article>
+<article class="card rv" data-svc="chu-de">
+  <div class="card-imgs" data-detail-img="bong-bay"><img src="img/p45.webp" alt="Bóng bay đỏ, ảnh 1" class="on" loading="lazy"><img src="img/p44.webp" alt="Bóng bay đỏ, ảnh 2" loading="lazy"><img src="img/p61.webp" alt="Bóng bay đỏ, ảnh 3" loading="lazy"><img src="img/p46.webp" alt="Bóng bay đỏ, ảnh 4" loading="lazy"><img src="img/p55.webp" alt="Bóng bay đỏ, ảnh 5" loading="lazy"></div>
+  <div class="card-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  <span class="price-tag">từ 699k</span>
+  <div class="card-info"><h3>Bóng bay đỏ</h3><p>Concept theo chủ đề · mùa đông</p>
+  <div class="cta-row"><a class="btn btn-pink btn-sm" href="#dat-lich" data-pick="bong-bay">Đặt concept này</a><button class="btn btn-ghost btn-sm" type="button" data-detail="bong-bay">Chi tiết</button></div></div>
+</article>
+<article class="card rv" data-svc="chu-de">
+  <div class="card-imgs" data-detail-img="cay-thong"><img src="img/p22.webp" alt="Cây thông len, ảnh 1" class="on" loading="lazy"><img src="img/p25.webp" alt="Cây thông len, ảnh 2" loading="lazy"><img src="img/p23.webp" alt="Cây thông len, ảnh 3" loading="lazy"><img src="img/p24.webp" alt="Cây thông len, ảnh 4" loading="lazy"><img src="img/p26.webp" alt="Cây thông len, ảnh 5" loading="lazy"></div>
+  <div class="card-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  <span class="price-tag">từ 699k</span>
+  <div class="card-info"><h3>Cây thông len</h3><p>Concept theo chủ đề · Giáng sinh</p>
+  <div class="cta-row"><a class="btn btn-pink btn-sm" href="#dat-lich" data-pick="cay-thong">Đặt concept này</a><button class="btn btn-ghost btn-sm" type="button" data-detail="cay-thong">Chi tiết</button></div></div>
+</article>
+<article class="card rv" data-svc="nghe-thuat">
+  <div class="card-imgs" data-detail-img="hoa-cuc"><img src="img/p38.webp" alt="Hoa cúc khăn voan, ảnh 1" class="on" loading="lazy"><img src="img/p37.webp" alt="Hoa cúc khăn voan, ảnh 2" loading="lazy"><img src="img/p42.webp" alt="Hoa cúc khăn voan, ảnh 3" loading="lazy"><img src="img/p39.webp" alt="Hoa cúc khăn voan, ảnh 4" loading="lazy"><img src="img/p48.webp" alt="Hoa cúc khăn voan, ảnh 5" loading="lazy"></div>
+  <div class="card-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  <span class="price-tag">từ 699k</span>
+  <div class="card-info"><h3>Hoa cúc khăn voan</h3><p>Concept nghệ thuật · vintage</p>
+  <div class="cta-row"><a class="btn btn-pink btn-sm" href="#dat-lich" data-pick="hoa-cuc">Đặt concept này</a><button class="btn btn-ghost btn-sm" type="button" data-detail="hoa-cuc">Chi tiết</button></div></div>
+</article>
+<article class="card rv" data-svc="nghe-thuat">
+  <div class="card-imgs" data-detail-img="vuon-reu"><img src="img/p53.webp" alt="Vườn rêu nàng thơ, ảnh 1" class="on" loading="lazy"><img src="img/p54.webp" alt="Vườn rêu nàng thơ, ảnh 2" loading="lazy"><img src="img/p58.webp" alt="Vườn rêu nàng thơ, ảnh 3" loading="lazy"><img src="img/p52.webp" alt="Vườn rêu nàng thơ, ảnh 4" loading="lazy"><img src="img/p60.webp" alt="Vườn rêu nàng thơ, ảnh 5" loading="lazy"></div>
+  <div class="card-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  <span class="price-tag">từ 1.899k</span>
+  <div class="card-info"><h3>Vườn rêu nàng thơ</h3><p>Concept nghệ thuật · khu vườn</p>
+  <div class="cta-row"><a class="btn btn-pink btn-sm" href="#dat-lich" data-pick="vuon-reu">Đặt concept này</a><button class="btn btn-ghost btn-sm" type="button" data-detail="vuon-reu">Chi tiết</button></div></div>
+</article>
+<article class="card rv" data-svc="co-trang">
+  <div class="card-imgs" data-detail-img="co-phong"><img src="img/p30.webp" alt="Bạch hoa cổ phong, ảnh 1" class="on" loading="lazy"><img src="img/p29.webp" alt="Bạch hoa cổ phong, ảnh 2" loading="lazy"><img src="img/p40.webp" alt="Bạch hoa cổ phong, ảnh 3" loading="lazy"><img src="img/p31.webp" alt="Bạch hoa cổ phong, ảnh 4" loading="lazy"><img src="img/p35.webp" alt="Bạch hoa cổ phong, ảnh 5" loading="lazy"></div>
+  <div class="card-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  <span class="price-tag">từ 1.899k</span>
+  <div class="card-info"><h3>Bạch hoa cổ phong</h3><p>Chụp ảnh cổ trang</p>
+  <div class="cta-row"><a class="btn btn-pink btn-sm" href="#dat-lich" data-pick="co-phong">Đặt concept này</a><button class="btn btn-ghost btn-sm" type="button" data-detail="co-phong">Chi tiết</button></div></div>
+</article>
+<article class="card rv" data-svc="chan-dung">
+  <div class="card-imgs" data-detail-img="chan-dung"><img src="img/p27.webp" alt="Chân dung trong, ảnh 1" class="on" loading="lazy"><img src="img/p28.webp" alt="Chân dung trong, ảnh 2" loading="lazy"><img src="img/p32.webp" alt="Chân dung trong, ảnh 3" loading="lazy"><img src="img/p36.webp" alt="Chân dung trong, ảnh 4" loading="lazy"></div>
+  <div class="card-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+  <span class="price-tag">từ 699k</span>
+  <div class="card-info"><h3>Chân dung trong</h3><p>Chụp ảnh chân dung</p>
+  <div class="cta-row"><a class="btn btn-pink btn-sm" href="#dat-lich" data-pick="chan-dung">Đặt concept này</a><button class="btn btn-ghost btn-sm" type="button" data-detail="chan-dung">Chi tiết</button></div></div>
+</article>
+<article class="card rv" data-svc="ca-nhan">
+  <div class="card-imgs" data-detail-img="blazer"><img src="img/p51.webp" alt="Blazer đen, ảnh 1" class="on" loading="lazy"><img src="img/p57.webp" alt="Blazer đen, ảnh 2" loading="lazy"><img src="img/p59.webp" alt="Blazer đen, ảnh 3" loading="lazy"><img src="img/p43.webp" alt="Blazer đen, ảnh 4" loading="lazy"><img src="img/p47.webp" alt="Blazer đen, ảnh 5" loading="lazy"></div>
+  <div class="card-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  <span class="price-tag">từ 1.199k</span>
+  <div class="card-info"><h3>Blazer đen</h3><p>Concept cá nhân · thời trang</p>
+  <div class="cta-row"><a class="btn btn-pink btn-sm" href="#dat-lich" data-pick="blazer">Đặt concept này</a><button class="btn btn-ghost btn-sm" type="button" data-detail="blazer">Chi tiết</button></div></div>
+</article>
+<article class="card rv" data-svc="chu-de">
+  <div class="card-imgs" data-detail-img="thu-la"><img src="img/p33.webp" alt="Thu lá khô, ảnh 1" class="on" loading="lazy"><img src="img/p41.webp" alt="Thu lá khô, ảnh 2" loading="lazy"><img src="img/p56.webp" alt="Thu lá khô, ảnh 3" loading="lazy"><img src="img/p34.webp" alt="Thu lá khô, ảnh 4" loading="lazy"><img src="img/p49.webp" alt="Thu lá khô, ảnh 5" loading="lazy"></div>
+  <div class="card-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  <span class="price-tag">từ 1.199k</span>
+  <div class="card-info"><h3>Thu lá khô</h3><p>Chụp đôi, nhóm bạn</p>
+  <div class="cta-row"><a class="btn btn-pink btn-sm" href="#dat-lich" data-pick="thu-la">Đặt concept này</a><button class="btn btn-ghost btn-sm" type="button" data-detail="thu-la">Chi tiết</button></div></div>
+</article></div>
+</div></section>
+
+<div class="strip" aria-hidden="true"><img src="img/p38.webp" alt="" loading="lazy"><img src="img/p57.webp" alt="" loading="lazy"><img src="img/p30.webp" alt="" loading="lazy"><img src="img/p46.webp" alt="" loading="lazy"><img src="img/p60.webp" alt="" loading="lazy"></div>
+
+<section class="sec band why"><div class="wrap">
+  <div>
+    <h2 class="h2 rv">Đến tay không, <span class="hl">về tay ảnh</span></h2>
+    <div class="facts">
+      <div class="fact rv"><b>9</b><h3>concept dựng sẵn</h3><p>Từ denim nghịch ngợm tới cổ phong thanh lịch.</p></div>
+      <div class="fact rv"><b>100%</b><h3>makeup + tóc</h3><p>Có trong mọi gói, làm theo tạo hình concept.</p></div>
+      <div class="fact rv"><b>0đ</b><h3>tiền thuê đồ</h3><p>Trang phục, đạo cụ có sẵn nhiều size.</p></div>
+      <div class="fact rv"><b>24h</b><h3>có ảnh gốc</h3><p>Ảnh chỉnh kỹ gửi sau 5–7 ngày.</p></div>
+    </div>
+  </div>
+  <div class="board rv" id="board">
+    <figure class="pol" data-i="0"><img src="img/p02.webp" alt="Concept đôi mươi" draggable="false" loading="lazy"><figcaption>đôi mươi</figcaption></figure><figure class="pol" data-i="1"><img src="img/p45.webp" alt="Concept bóng bay" draggable="false" loading="lazy"><figcaption>bóng bay</figcaption></figure><figure class="pol" data-i="2"><img src="img/p22.webp" alt="Concept cây thông" draggable="false" loading="lazy"><figcaption>cây thông</figcaption></figure><figure class="pol" data-i="3"><img src="img/p38.webp" alt="Concept hoa cúc" draggable="false" loading="lazy"><figcaption>hoa cúc</figcaption></figure><figure class="pol" data-i="4"><img src="img/p53.webp" alt="Concept vườn rêu" draggable="false" loading="lazy"><figcaption>vườn rêu</figcaption></figure>
+    <div class="board-hint"><button class="btn btn-ghost btn-sm" type="button" id="shuffle">Xáo ảnh</button><span>hoặc kéo thử từng tấm</span></div>
+  </div>
+</div></section>
+
+<section class="quiz sec band" id="tim-concept"><div class="wrap">
+  <div>
+    <h2 class="h2 rv">Bạn hợp concept nào?</h2>
+    <p class="lead rv" style="margin-top:16px">Trả lời 3 câu, nhà La gợi ý concept dành cho bạn.</p>
+    <div class="quiz-photos" aria-hidden="true"><img src="img/p46.webp" alt="" loading="lazy"><img src="img/p60.webp" alt="" loading="lazy"><img src="img/p25.webp" alt="" loading="lazy"></div>
+  </div>
+  <div class="quiz-card" id="quiz" aria-live="polite">
+    <p class="q-step"><span class="q-dots"><i class="on"></i><i></i><i></i></span> Câu 1 / 3</p>
+    <p class="q-title">Bạn chụp ảnh để làm gì?</p>
+    <div class="q-opts"><button class="q-opt" type="button" data-o="0"><img src="img/p02.webp" alt="">Mừng sinh nhật</button><button class="q-opt" type="button" data-o="1"><img src="img/p27.webp" alt="">Đổi ảnh đại diện</button><button class="q-opt" type="button" data-o="2"><img src="img/p33.webp" alt="">Kỷ niệm với người thương</button><button class="q-opt" type="button" data-o="3"><img src="img/p53.webp" alt="">Có bộ ảnh nghệ thuật</button></div>
+  </div>
+</div></section>
+
+<dialog class="lb dlg" id="dlg" aria-labelledby="dlg-name" style="max-width:min(1000px,94vw);background:var(--surface);color:var(--ink);border-radius:30px;padding:0">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;padding:clamp(18px,3vw,32px);max-height:90vh;overflow:auto">
+    <div id="dlg-photos" style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;align-content:start"></div>
+    <div style="display:grid;gap:16px;align-content:start"><span class="muted" id="dlg-kind" style="font-weight:600;color:var(--pink-d)"></span><h3 id="dlg-name" style="font-size:clamp(36px,4vw,56px)"></h3><p id="dlg-desc" class="muted"></p>
+    <dl style="margin:0;display:grid;gap:10px"><div><dt style="font-weight:600">Hợp với</dt><dd class="muted" id="dlg-fit" style="margin:0"></dd></div><div><dt style="font-weight:600">Nhà La có sẵn</dt><dd class="muted" id="dlg-has" style="margin:0"></dd></div><div><dt style="font-weight:600">Gói gợi ý</dt><dd class="muted" id="dlg-pack" style="margin:0"></dd></div></dl>
+    <div class="cta-row"><a class="btn btn-pink" href="#dat-lich" id="dlg-pick">Đặt concept này</a><button class="btn btn-ghost" type="button" id="dlg-x">Đóng</button></div></div>
+  </div>
+</dialog>
+
+<section class="sec band" id="bang-gia"><div class="wrap">
+  <div class="head"><div><h2 class="h2 rv">Bảng giá rõ ràng</h2><p class="lead rv">Không phát sinh phí phông nền, trang phục hay makeup.</p></div></div>
+  <div class="plans"><div class="plan rv"><h3>Gói Xinh</h3><p class="plan-price">699.000đ<small>một người · 60 phút</small></p><ul><li>60 phút</li><li>1 concept</li><li>Trang phục: 1 bộ</li><li>Makeup + làm tóc nhẹ</li><li>Ảnh chỉnh kỹ: 10 ảnh</li><li>Toàn bộ ảnh gốc</li></ul><a class="btn btn-ghost" href="#dat-lich" data-pack="xinh">Chọn Gói Xinh</a></div><div class="plan star rv"><span class="badge">Được chọn nhiều</span><h3>Gói Thơ</h3><p class="plan-price">1.199.000đ<small>một người · 90 phút</small></p><ul><li>90 phút</li><li>1 concept</li><li>Trang phục: 2 bộ</li><li>Makeup + làm tóc theo concept</li><li>Ảnh chỉnh kỹ: 20 ảnh</li><li>Toàn bộ ảnh gốc</li><li>Quà: 1 ảnh in 13×18</li></ul><a class="btn btn-pink" href="#dat-lich" data-pack="tho">Chọn Gói Thơ</a></div><div class="plan rv"><h3>Gói Nàng thơ</h3><p class="plan-price">1.899.000đ<small>một người · 150 phút</small></p><ul><li>150 phút</li><li>2 concept</li><li>Trang phục: 3 bộ</li><li>Makeup + làm tóc, đổi layout giữa 2 concept</li><li>Ảnh chỉnh kỹ: 35 ảnh</li><li>Toàn bộ ảnh gốc</li><li>Quà: 1 ảnh in 20×30 + 1 video hậu trường</li></ul><a class="btn btn-ghost" href="#dat-lich" data-pack="nang-tho">Chọn Gói Nàng thơ</a></div></div>
+  <div class="notes"><p class="rv"><b>Chụp đôi, chụp nhóm</b>Thêm 300k mỗi người, đã gồm makeup riêng.</p><p class="rv"><b>Giữ lịch</b>Cọc 30% sau khi studio xác nhận. Dời lịch miễn phí một lần nếu báo trước 24 giờ.</p><p class="rv"><b>Thêm ảnh chỉnh</b>50k mỗi ảnh, chọn từ ảnh gốc.</p></div>
+</div></section>
+
+<section class="sec band" id="anh" style="padding-top:0"><div class="wrap">
+  <div class="head"><h2 class="h2 rv">Ảnh từ nhà La</h2></div>
+  <div class="chips scroll" role="group" aria-label="Lọc ảnh theo concept" id="g-chips"><button class="chip" aria-pressed="true" data-g="all">Tất cả</button><button class="chip" aria-pressed="false" data-g="doi-muoi">Đôi mươi rực rỡ</button><button class="chip" aria-pressed="false" data-g="bong-bay">Bóng bay đỏ</button><button class="chip" aria-pressed="false" data-g="cay-thong">Cây thông len</button><button class="chip" aria-pressed="false" data-g="hoa-cuc">Hoa cúc khăn voan</button><button class="chip" aria-pressed="false" data-g="vuon-reu">Vườn rêu nàng thơ</button><button class="chip" aria-pressed="false" data-g="co-phong">Bạch hoa cổ phong</button><button class="chip" aria-pressed="false" data-g="chan-dung">Chân dung trong</button><button class="chip" aria-pressed="false" data-g="blazer">Blazer đen</button><button class="chip" aria-pressed="false" data-g="thu-la">Thu lá khô</button></div>
+  <div class="gallery" id="masonry"><button data-g="doi-muoi" aria-label="Phóng to ảnh Đôi mươi rực rỡ"><img src="img/p02.webp" width="1000" height="1500" alt="Đôi mươi rực rỡ" loading="lazy"></button><button data-g="cay-thong" aria-label="Phóng to ảnh Cây thông len"><img src="img/p22.webp" width="930" height="1280" alt="Cây thông len" loading="lazy"></button><button data-g="chan-dung" aria-label="Phóng to ảnh Chân dung trong"><img src="img/p27.webp" width="825" height="1100" alt="Chân dung trong" loading="lazy"></button><button data-g="co-phong" aria-label="Phóng to ảnh Bạch hoa cổ phong"><img src="img/p30.webp" width="1000" height="1500" alt="Bạch hoa cổ phong" loading="lazy"></button><button data-g="thu-la" aria-label="Phóng to ảnh Thu lá khô"><img src="img/p33.webp" width="981" height="1100" alt="Thu lá khô" loading="lazy"></button><button data-g="hoa-cuc" aria-label="Phóng to ảnh Hoa cúc khăn voan"><img src="img/p38.webp" width="880" height="1100" alt="Hoa cúc khăn voan" loading="lazy"></button><button data-g="blazer" aria-label="Phóng to ảnh Blazer đen"><img src="img/p51.webp" width="825" height="1100" alt="Blazer đen" loading="lazy"></button><button data-g="bong-bay" aria-label="Phóng to ảnh Bóng bay đỏ"><img src="img/p45.webp" width="1080" height="1440" alt="Bóng bay đỏ" loading="lazy"></button><button data-g="vuon-reu" aria-label="Phóng to ảnh Vườn rêu nàng thơ"><img src="img/p53.webp" width="1064" height="1426" alt="Vườn rêu nàng thơ" loading="lazy"></button><button data-g="doi-muoi" aria-label="Phóng to ảnh Đôi mươi rực rỡ"><img src="img/p00.webp" width="815" height="1100" alt="Đôi mươi rực rỡ" loading="lazy"></button><button data-g="cay-thong" aria-label="Phóng to ảnh Cây thông len"><img src="img/p24.webp" width="791" height="1100" alt="Cây thông len" loading="lazy"></button><button data-g="chan-dung" aria-label="Phóng to ảnh Chân dung trong"><img src="img/p32.webp" width="828" height="1100" alt="Chân dung trong" loading="lazy"></button><button data-g="co-phong" aria-label="Phóng to ảnh Bạch hoa cổ phong"><img src="img/p31.webp" width="733" height="1100" alt="Bạch hoa cổ phong" loading="lazy"></button><button data-g="thu-la" aria-label="Phóng to ảnh Thu lá khô"><img src="img/p50.webp" width="1100" height="710" alt="Thu lá khô" loading="lazy"></button><button data-g="hoa-cuc" aria-label="Phóng to ảnh Hoa cúc khăn voan"><img src="img/p39.webp" width="880" height="1100" alt="Hoa cúc khăn voan" loading="lazy"></button><button data-g="blazer" aria-label="Phóng to ảnh Blazer đen"><img src="img/p57.webp" width="825" height="1100" alt="Blazer đen" loading="lazy"></button><button data-g="bong-bay" aria-label="Phóng to ảnh Bóng bay đỏ"><img src="img/p46.webp" width="825" height="1100" alt="Bóng bay đỏ" loading="lazy"></button><button data-g="vuon-reu" aria-label="Phóng to ảnh Vườn rêu nàng thơ"><img src="img/p60.webp" width="823" height="1100" alt="Vườn rêu nàng thơ" loading="lazy"></button><button data-g="doi-muoi" aria-label="Phóng to ảnh Đôi mươi rực rỡ"><img src="img/p04.webp" width="1140" height="1500" alt="Đôi mươi rực rỡ" loading="lazy"></button><button data-g="cay-thong" aria-label="Phóng to ảnh Cây thông len"><img src="img/p25.webp" width="799" height="1100" alt="Cây thông len" loading="lazy"></button><button data-g="chan-dung" aria-label="Phóng to ảnh Chân dung trong"><img src="img/p28.webp" width="825" height="1100" alt="Chân dung trong" loading="lazy"></button><button data-g="co-phong" aria-label="Phóng to ảnh Bạch hoa cổ phong"><img src="img/p35.webp" width="733" height="1100" alt="Bạch hoa cổ phong" loading="lazy"></button><button data-g="thu-la" aria-label="Phóng to ảnh Thu lá khô"><img src="img/p56.webp" width="933" height="1100" alt="Thu lá khô" loading="lazy"></button><button data-g="hoa-cuc" aria-label="Phóng to ảnh Hoa cúc khăn voan"><img src="img/p48.webp" width="880" height="1100" alt="Hoa cúc khăn voan" loading="lazy"></button><button data-g="blazer" aria-label="Phóng to ảnh Blazer đen"><img src="img/p47.webp" width="825" height="1100" alt="Blazer đen" loading="lazy"></button><button data-g="bong-bay" aria-label="Phóng to ảnh Bóng bay đỏ"><img src="img/p55.webp" width="825" height="1100" alt="Bóng bay đỏ" loading="lazy"></button><button data-g="vuon-reu" aria-label="Phóng to ảnh Vườn rêu nàng thơ"><img src="img/p58.webp" width="821" height="1100" alt="Vườn rêu nàng thơ" loading="lazy"></button><button data-g="doi-muoi" aria-label="Phóng to ảnh Đôi mươi rực rỡ"><img src="img/p07.webp" width="734" height="1100" alt="Đôi mươi rực rỡ" loading="lazy"></button><button data-g="cay-thong" aria-label="Phóng to ảnh Cây thông len"><img src="img/p23.webp" width="791" height="1100" alt="Cây thông len" loading="lazy"></button><button data-g="chan-dung" aria-label="Phóng to ảnh Chân dung trong"><img src="img/p36.webp" width="1100" height="816" alt="Chân dung trong" loading="lazy"></button><button data-g="co-phong" aria-label="Phóng to ảnh Bạch hoa cổ phong"><img src="img/p29.webp" width="733" height="1100" alt="Bạch hoa cổ phong" loading="lazy"></button><button data-g="thu-la" aria-label="Phóng to ảnh Thu lá khô"><img src="img/p34.webp" width="1100" height="701" alt="Thu lá khô" loading="lazy"></button><button data-g="hoa-cuc" aria-label="Phóng to ảnh Hoa cúc khăn voan"><img src="img/p37.webp" width="880" height="1100" alt="Hoa cúc khăn voan" loading="lazy"></button><button data-g="blazer" aria-label="Phóng to ảnh Blazer đen"><img src="img/p62.webp" width="825" height="1100" alt="Blazer đen" loading="lazy"></button><button data-g="bong-bay" aria-label="Phóng to ảnh Bóng bay đỏ"><img src="img/p44.webp" width="825" height="1100" alt="Bóng bay đỏ" loading="lazy"></button><button data-g="vuon-reu" aria-label="Phóng to ảnh Vườn rêu nàng thơ"><img src="img/p52.webp" width="811" height="1100" alt="Vườn rêu nàng thơ" loading="lazy"></button><button data-g="doi-muoi" aria-label="Phóng to ảnh Đôi mươi rực rỡ"><img src="img/p01.webp" width="822" height="1100" alt="Đôi mươi rực rỡ" loading="lazy"></button><button data-g="cay-thong" aria-label="Phóng to ảnh Cây thông len"><img src="img/p26.webp" width="787" height="1100" alt="Cây thông len" loading="lazy"></button><button data-g="co-phong" aria-label="Phóng to ảnh Bạch hoa cổ phong"><img src="img/p40.webp" width="733" height="1100" alt="Bạch hoa cổ phong" loading="lazy"></button><button data-g="thu-la" aria-label="Phóng to ảnh Thu lá khô"><img src="img/p41.webp" width="918" height="1100" alt="Thu lá khô" loading="lazy"></button><button data-g="hoa-cuc" aria-label="Phóng to ảnh Hoa cúc khăn voan"><img src="img/p42.webp" width="880" height="1100" alt="Hoa cúc khăn voan" loading="lazy"></button><button data-g="blazer" aria-label="Phóng to ảnh Blazer đen"><img src="img/p43.webp" width="825" height="1100" alt="Blazer đen" loading="lazy"></button><button data-g="bong-bay" aria-label="Phóng to ảnh Bóng bay đỏ"><img src="img/p61.webp" width="825" height="1100" alt="Bóng bay đỏ" loading="lazy"></button><button data-g="vuon-reu" aria-label="Phóng to ảnh Vườn rêu nàng thơ"><img src="img/p54.webp" width="812" height="1100" alt="Vườn rêu nàng thơ" loading="lazy"></button><button data-g="doi-muoi" aria-label="Phóng to ảnh Đôi mươi rực rỡ"><img src="img/p03.webp" width="802" height="1100" alt="Đôi mươi rực rỡ" loading="lazy"></button><button data-g="thu-la" aria-label="Phóng to ảnh Thu lá khô"><img src="img/p49.webp" width="1100" height="691" alt="Thu lá khô" loading="lazy"></button><button data-g="blazer" aria-label="Phóng to ảnh Blazer đen"><img src="img/p59.webp" width="825" height="1100" alt="Blazer đen" loading="lazy"></button><button data-g="doi-muoi" aria-label="Phóng to ảnh Đôi mươi rực rỡ"><img src="img/p05.webp" width="751" height="1100" alt="Đôi mươi rực rỡ" loading="lazy"></button><button data-g="blazer" aria-label="Phóng to ảnh Blazer đen"><img src="img/p63.webp" width="825" height="1100" alt="Blazer đen" loading="lazy"></button><button data-g="doi-muoi" aria-label="Phóng to ảnh Đôi mươi rực rỡ"><img src="img/p06.webp" width="886" height="1100" alt="Đôi mươi rực rỡ" loading="lazy"></button><button data-g="doi-muoi" aria-label="Phóng to ảnh Đôi mươi rực rỡ"><img src="img/p08.webp" width="734" height="1100" alt="Đôi mươi rực rỡ" loading="lazy"></button></div>
+  <div class="cta-row" style="justify-content:center;margin-top:24px"><button class="btn btn-ghost" type="button" id="g-more">Xem thêm ảnh</button></div>
+  <dialog class="lb" id="lb" aria-label="Ảnh phóng to"><img id="lb-img" src="img/p02.webp" alt=""><button class="btn btn-pink btn-sm lb-close" id="lb-close" type="button">Đóng</button><button class="lb-nav lb-prev" id="lb-prev" type="button" aria-label="Ảnh trước">‹</button><button class="lb-nav lb-next" id="lb-next" type="button" aria-label="Ảnh sau">›</button><p class="lb-count" id="lb-count"></p></dialog>
+</div></section>
+
+<section class="sec band faq" id="hoi-dap" style="background:var(--pink-soft)"><div class="wrap">
+  <div class="faq-side"><h2 class="h2 rv">Hỏi nhanh đáp gọn</h2><img class="rv" src="img/p56.webp" alt="Concept Thu lá khô" loading="lazy"></div>
+  <div class="faq-list">
+    <details class="rv" open><summary>Chưa chụp bao giờ, không biết tạo dáng?</summary><p>Đa số khách của nhà La cũng vậy. Thợ chụp chỉ từng dáng, từng hướng mặt và cho bạn xem ảnh ngay trên máy trong lúc chụp.</p></details>
+    <details class="rv"><summary>Có cần mang trang phục không?</summary><p>Không cần. Mỗi concept có sẵn trang phục nhiều size. Muốn mặc đồ riêng thì gửi ảnh qua Zalo để studio tư vấn phối với phông.</p></details>
+    <details class="rv"><summary>Đặt cọc và dời lịch thế nào?</summary><p>Sau khi bạn gửi yêu cầu, studio nhắn xác nhận qua Zalo và gửi thông tin cọc 30%. Được dời lịch miễn phí một lần nếu báo trước 24 giờ.</p></details>
+    <details class="rv"><summary>Bao lâu thì có ảnh?</summary><p>Ảnh gốc gửi qua Google Drive ngay trong ngày. Ảnh chỉnh kỹ gửi sau 5–7 ngày.</p></details>
+    <details class="rv"><summary>Chụp cùng bạn thân, người yêu được không?</summary><p>Được. Concept Thu lá khô làm cho hai người, các concept khác thêm người với phụ thu 300k mỗi người.</p></details>
+    <details class="rv"><summary>Có ý tưởng riêng thì sao?</summary><p>Gửi ảnh tham khảo qua Zalo hoặc Messenger. Studio báo lại đạo cụ cần dựng, thời gian chuẩn bị và chi phí trước khi chốt lịch.</p></details>
+  </div>
+</div></section>
+
+<section class="sec band book" id="dat-lich"><div class="wrap">
+  <div class="book-side">
+    <h2 class="h2 rv">Đặt lịch trong 3 bước</h2>
+    <p class="lead">Studio nhắn lại qua Zalo trong vòng 2 giờ để xác nhận giờ chụp.</p>
+    <div class="sum" id="ticket" aria-live="polite"><img id="pick-img" src="img/p02.webp" alt=""><div class="sum-in"><small>Lịch chụp của bạn</small><p class="pick-name" id="pick-name">Đôi mươi rực rỡ</p><p class="pick-meta" id="pick-meta">Gói Thơ · 90 phút · 1 người</p><p class="pick-total" id="pick-total">Tạm tính 1.199.000đ</p></div></div>
+  </div>
+  <div>
+  <form class="bk" id="bk" novalidate>
+    <ol class="steps" aria-label="Các bước đặt lịch"><li class="on" data-st="1">Concept &amp; gói</li><li data-st="2">Ngày giờ</li><li data-st="3">Liên hệ</li></ol>
+    <div class="step" data-step="1">
+      <h3>Chọn concept và gói</h3>
+      <fieldset class="field"><legend>Concept</legend><div class="cpick"><label><input type="radio" name="cpick" value="doi-muoi" checked><span><img src="img/p02.webp" alt="" loading="lazy">Đôi mươi rực rỡ</span></label><label><input type="radio" name="cpick" value="bong-bay"><span><img src="img/p55.webp" alt="" loading="lazy">Bóng bay đỏ</span></label><label><input type="radio" name="cpick" value="cay-thong"><span><img src="img/p22.webp" alt="" loading="lazy">Cây thông len</span></label><label><input type="radio" name="cpick" value="hoa-cuc"><span><img src="img/p39.webp" alt="" loading="lazy">Hoa cúc khăn voan</span></label><label><input type="radio" name="cpick" value="vuon-reu"><span><img src="img/p53.webp" alt="" loading="lazy">Vườn rêu nàng thơ</span></label><label><input type="radio" name="cpick" value="co-phong"><span><img src="img/p31.webp" alt="" loading="lazy">Bạch hoa cổ phong</span></label><label><input type="radio" name="cpick" value="chan-dung"><span><img src="img/p36.webp" alt="" loading="lazy">Chân dung trong</span></label><label><input type="radio" name="cpick" value="blazer"><span><img src="img/p63.webp" alt="" loading="lazy">Blazer đen</span></label><label><input type="radio" name="cpick" value="thu-la"><span><img src="img/p34.webp" alt="" loading="lazy">Thu lá khô</span></label></div></fieldset>
+      <label class="sr" for="f-concept">Concept</label><select id="f-concept" name="concept" class="sr" tabindex="-1" aria-hidden="true"><option value="doi-muoi">Đôi mươi rực rỡ</option><option value="bong-bay">Bóng bay đỏ</option><option value="cay-thong">Cây thông len</option><option value="hoa-cuc">Hoa cúc khăn voan</option><option value="vuon-reu">Vườn rêu nàng thơ</option><option value="co-phong">Bạch hoa cổ phong</option><option value="chan-dung">Chân dung trong</option><option value="blazer">Blazer đen</option><option value="thu-la">Thu lá khô</option><option value="rieng">Ý tưởng riêng</option></select>
+      <fieldset class="field"><legend>Gói chụp</legend><div class="opts"><label><input type="radio" name="pack" id="pack-xinh" value="xinh"><span>Gói Xinh · 699k</span></label><label><input type="radio" name="pack" id="pack-tho" value="tho" checked><span>Gói Thơ · 1.199k</span></label><label><input type="radio" name="pack" id="pack-nang-tho" value="nang-tho"><span>Gói Nàng thơ · 1.899k</span></label></div></fieldset>
+      <fieldset class="field"><legend>Số người</legend><div class="opts"><label><input type="radio" name="people" id="people-1" value="1" checked><span>1 người</span></label><label><input type="radio" name="people" id="people-2" value="2"><span>2 người</span></label><label><input type="radio" name="people" id="people-3" value="3"><span>3 người</span></label><label><input type="radio" name="people" id="people-4" value="4"><span>4 người trở lên</span></label></div></fieldset>
+      <div class="step-nav"><span></span><button class="btn btn-pink" type="button" data-go="2">Tiếp: chọn ngày giờ</button></div>
+    </div>
+    <div class="step" data-step="2" hidden>
+      <h3>Chọn ngày và giờ</h3>
+      <div class="field"><label for="f-date">Ngày chụp</label><input id="f-date" name="date" type="date" required></div>
+      <fieldset class="field"><legend>Khung giờ</legend><div class="opts"><label><input type="radio" name="slot" id="slot-08:30" value="08:30"><span>8:30</span></label><label><input type="radio" name="slot" id="slot-10:30" value="10:30" checked><span>10:30</span></label><label><input type="radio" name="slot" id="slot-13:30" value="13:30"><span>13:30</span></label><label><input type="radio" name="slot" id="slot-15:30" value="15:30"><span>15:30</span></label><label><input type="radio" name="slot" id="slot-18:00" value="18:00"><span>18:00</span></label></div></fieldset>
+      <p class="err" id="f-err2" hidden>Bạn chọn giúp ngày chụp nhé.</p>
+      <div class="step-nav"><button class="btn btn-ghost" type="button" data-go="1">Quay lại</button><button class="btn btn-pink" type="button" data-go="3">Tiếp: thông tin liên hệ</button></div>
+    </div>
+    <div class="step" data-step="3" hidden>
+      <h3>Để lại thông tin liên hệ</h3>
+      <div class="row2">
+        <div class="field"><label for="f-name">Họ và tên</label><input id="f-name" name="name" autocomplete="name" placeholder="Nguyễn Ngọc Anh" required></div>
+        <div class="field"><label for="f-phone">Số điện thoại / Zalo</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="09xx xxx xxx" required></div>
+      </div>
+      <div class="field"><label for="f-note">Ghi chú</label><textarea id="f-note" name="note" placeholder="Ví dụ: chụp sinh nhật 20 tuổi, muốn có chữ dán tên Ngọc Anh"></textarea></div>
+      <p class="err" id="f-err" hidden></p>
+      <div class="step-nav"><button class="btn btn-ghost" type="button" data-go="2">Quay lại</button><button class="btn btn-pink" type="submit" id="f-submit">Gửi yêu cầu đặt lịch</button></div>
+    </div>
+  </form>
+  <div class="done" id="done" hidden aria-live="polite">
+    <h3 id="done-title">Nhà La đã nhận yêu cầu!</h3>
+    <p id="done-text">Studio sẽ nhắn bạn qua Zalo để xác nhận. Muốn giữ lịch nhanh hơn, gửi luôn tin nhắn dưới đây cho studio.</p>
+    <p class="msg" id="done-msg"></p>
+    <div class="cta-row"><button class="btn btn-pink" type="button" id="copy-msg">Sao chép tin nhắn</button><a class="btn btn-ghost" href="https://zalo.me/0931419538" target="_blank" rel="noopener">Mở Zalo</a><a class="btn btn-ghost" href="https://m.me/61590492897254" target="_blank" rel="noopener">Mở Messenger</a></div>
+    <button class="btn btn-ghost btn-sm" type="button" id="again" style="justify-self:start">Đặt thêm lịch khác</button>
+  </div>
+  </div>
+</div></section>
+
+<section class="sec band contact" id="lien-he" style="padding-top:0"><div class="wrap">
+  <div>
+    <h2 class="h2 rv">Ghé nhà La chơi</h2>
+    <ul class="ct-list">
+      <li class="rv"><b>Điện thoại và Zalo</b><div class="ct-row"><span class="ct-big" id="phone-text">093 141 95 38</span><button class="btn btn-ghost btn-sm" type="button" id="copy-phone">Sao chép số</button></div></li>
+      <li class="rv"><b>Giờ mở cửa</b><span class="ct-big">8:00 – 20:00 mỗi ngày</span><span class="muted">Chụp theo lịch hẹn trước.</span></li>
+      <li class="rv"><b>Địa chỉ</b><span class="ct-big">TP. Hồ Chí Minh</span><a href="https://www.google.com/maps/search/?api=1&query=La+STUDIO+-+TI%E1%BB%86M+%E1%BA%A2NH+NH%C3%80+LA&query_place_id=ChIJ3ejJT20vdTER9ivHNB9_n6I" target="_blank" rel="noopener">Xem đường đi trên Google Maps</a></li>
+      <li class="rv"><div class="ct-row"><a class="btn btn-blue btn-sm" href="https://www.facebook.com/profile.php?id=61590492897254" target="_blank" rel="noopener">Facebook La studio</a><a class="btn btn-ghost btn-sm" href="https://zalo.me/0931419538" target="_blank" rel="noopener">Zalo</a><a class="btn btn-ghost btn-sm" href="https://m.me/61590492897254" target="_blank" rel="noopener">Messenger</a></div></li>
+    </ul>
+  </div>
+  <div class="ct-pics rv" aria-hidden="true"><img src="img/p40.webp" alt="" loading="lazy"><img src="img/p61.webp" alt="" loading="lazy"></div>
+</div></section>
+
+<section class="sec band" id="quan-ly" style="padding-top:0"><div class="wrap">
+  <div class="head"><div><h2 class="h2" style="font-size:clamp(34px,4vw,56px)">Quản lý đặt lịch</h2><p class="muted" id="adm-note" style="margin-top:10px">Khu vực dành cho chủ studio. Yêu cầu mới hiện ở đây ngay khi khách gửi.</p></div><div class="adm-stats" id="adm-stats"></div></div>
+  <div class="chips" role="group" aria-label="Lọc theo trạng thái" id="adm-filter"><button class="chip" aria-pressed="true" data-s="all">Tất cả</button><button class="chip" aria-pressed="false" data-s="new">Mới</button><button class="chip" aria-pressed="false" data-s="ok">Đã xác nhận</button><button class="chip" aria-pressed="false" data-s="done">Đã chụp</button><button class="chip" aria-pressed="false" data-s="cancel">Đã huỷ</button></div>
+  <div class="adm-scroll"><table class="adm"><thead><tr><th>Gửi lúc</th><th>Khách</th><th>Ngày &amp; giờ chụp</th><th>Concept · gói</th><th>Ghi chú</th><th>Trạng thái</th><th></th></tr></thead><tbody id="adm-body"><tr><td colspan="7" class="adm-empty">Chưa có yêu cầu nào. Khi khách gửi form Đặt lịch, yêu cầu sẽ xuất hiện ở đây.</td></tr></tbody></table></div>
+</div></section>
+</main>
+
+<footer class="foot band"><div class="wrap">
+  <p class="foot-name" aria-hidden="true">La studio<span>.</span></p>
+  <div class="foot-row"><span>Tiệm ảnh nhà La · chụp ảnh nàng thơ ở TP.HCM</span><nav aria-label="Chân trang"><a href="#concept">Concept</a><a href="#bang-gia">Bảng giá</a><a href="#dat-lich">Đặt lịch</a><a href="https://www.facebook.com/profile.php?id=61590492897254" target="_blank" rel="noopener">Facebook</a><a href="#quan-ly">Quản lý đặt lịch</a></nav></div>
+  <div class="foot-row"><span>© 2026 La studio</span><span>Toàn bộ ảnh do La studio thực hiện</span></div>
+</div></footer>
+
+<div class="bbar" id="bbar">
+  <img id="bb-img" src="img/p02.webp" alt="">
+  <div class="bbar-info"><b id="bb-name">Đôi mươi rực rỡ</b><span id="bb-total">Gói Thơ · 1.199.000đ</span></div>
+  <a class="chat z" href="https://zalo.me/0931419538" target="_blank" rel="noopener">Zalo</a><a class="chat" href="https://m.me/61590492897254" target="_blank" rel="noopener">Messenger</a>
+  <a class="btn btn-pink" href="#dat-lich" id="bb-go">Đặt lịch</a>
+</div>
+
+<script>window.LA={"concepts": [{"id": "doi-muoi", "name": "Đôi mươi rực rỡ", "kind": "Concept cá nhân · sinh nhật", "desc": "Phông xám nhạt dán đầy miếng vá denim, nút áo nhiều màu và ngôi sao vải. Vương miện denim, gấu bông và đôi boots đỏ cho tuổi hai mươi nghịch ngợm.", "fit": "Sinh nhật 18, 20, 22 tuổi; chụp cùng chữ tên hoặc số tuổi.", "has": "Vương miện denim, gấu bông, blazer, cà vạt, boots đỏ, chữ dán theo tên.", "pack": "Gói Thơ", "svc": "ca-nhan", "thumb": "img/p02.webp", "pics": ["img/p04.webp", "img/p02.webp", "img/p05.webp", "img/p07.webp", "img/p00.webp"]}, {"id": "bong-bay", "name": "Bóng bay đỏ", "kind": "Concept theo chủ đề · mùa đông", "desc": "Chùm bóng bay đỏ buộc nơ thành chiếc mũ, khăn len kẻ sọc và nền trắng sữa. Tóc búi hai bên, má hồng, ánh nhìn tinh nghịch.", "fit": "Sinh nhật, Giáng sinh, ảnh đại diện vui tươi.", "has": "Mũ bóng bay, khăn len sọc đỏ trắng, áo len kem.", "pack": "Gói Xinh", "svc": "chu-de", "thumb": "img/p55.webp", "pics": ["img/p45.webp", "img/p44.webp", "img/p61.webp", "img/p46.webp", "img/p55.webp"]}, {"id": "cay-thong", "name": "Cây thông len", "kind": "Concept theo chủ đề · Giáng sinh", "desc": "Áo len đan to màu kem, tất len và chiếc mũ cây thông nhỏ xinh. Ánh sáng ấm, nền be mềm như một buổi sáng tháng mười hai.", "fit": "Ảnh Noel, ảnh đại diện, quà tặng cuối năm.", "has": "Mũ cây thông, áo len oversize, tất len kem.", "pack": "Gói Xinh", "svc": "chu-de", "thumb": "img/p22.webp", "pics": ["img/p22.webp", "img/p25.webp", "img/p23.webp", "img/p24.webp", "img/p26.webp"]}, {"id": "hoa-cuc", "name": "Hoa cúc khăn voan", "kind": "Concept nghệ thuật · vintage", "desc": "Khăn voan hoa nhí trùm tóc, hoa cúc trắng cài và cầm tay, váy bèo trắng. Gần như chụp cận, má hồng và đôi mắt to tròn.", "fit": "Ảnh chân dung nhẹ nhàng, phong cách baby.", "has": "Khăn voan hoa, hoa cúc tươi, váy bèo, nhẫn bạc.", "pack": "Gói Xinh", "svc": "nghe-thuat", "thumb": "img/p39.webp", "pics": ["img/p38.webp", "img/p37.webp", "img/p42.webp", "img/p39.webp", "img/p48.webp"]}, {"id": "vuon-reu", "name": "Vườn rêu nàng thơ", "kind": "Concept nghệ thuật · khu vườn", "desc": "Phông xanh rêu vẽ tay, khóm hoa dại và váy lụa trắng. Hoa cài tóc, ánh sáng dịu như bức tranh sơn dầu.", "fit": "Bộ ảnh nghệ thuật, ảnh kỷ niệm, ảnh trưởng thành.", "has": "Váy lụa trắng, hoa tươi cài tóc, set cây hoa dại.", "pack": "Gói Nàng thơ", "svc": "nghe-thuat", "thumb": "img/p53.webp", "pics": ["img/p53.webp", "img/p54.webp", "img/p58.webp", "img/p52.webp", "img/p60.webp"]}, {"id": "co-phong", "name": "Bạch hoa cổ phong", "kind": "Chụp ảnh cổ trang", "desc": "Áo giao lĩnh trắng tay rộng, tóc dài buộc thấp cài hoa đào. Bình gốm, cành hoa hồng phấn và nền xanh oliu trầm.", "fit": "Người yêu cổ phong, ảnh Tết, ảnh nghệ thuật.", "has": "Áo cổ phong trắng, trâm hoa, bình gốm và hoa đào.", "pack": "Gói Nàng thơ", "svc": "co-trang", "thumb": "img/p31.webp", "pics": ["img/p30.webp", "img/p29.webp", "img/p40.webp", "img/p31.webp", "img/p35.webp"]}, {"id": "chan-dung", "name": "Chân dung trong", "kind": "Chụp ảnh chân dung", "desc": "Cận mặt, lớp nền mỏng trong veo, tóc rối nhẹ trước trán. Ít đạo cụ, tập trung vào làn da và ánh mắt.", "fit": "Ảnh hồ sơ, ảnh đại diện, ảnh profile nghề nghiệp.", "has": "Áo trễ vai kem, hoa lan trắng, makeup trong.", "pack": "Gói Xinh", "svc": "chan-dung", "thumb": "img/p36.webp", "pics": ["img/p27.webp", "img/p28.webp", "img/p32.webp", "img/p36.webp"]}, {"id": "blazer", "name": "Blazer đen", "kind": "Concept cá nhân · thời trang", "desc": "Blazer oversize, cà vạt đỏ rượu, tất đen và ghế da. Nền xám studio, dáng đứng thẳng, chất ảnh tạp chí.", "fit": "Ảnh cá tính, ảnh profile thời trang, sinh nhật trưởng thành.", "has": "Blazer đen, cà vạt đỏ, ghế da, giày cao gót.", "pack": "Gói Thơ", "svc": "ca-nhan", "thumb": "img/p63.webp", "pics": ["img/p51.webp", "img/p57.webp", "img/p59.webp", "img/p43.webp", "img/p47.webp"]}, {"id": "thu-la", "name": "Thu lá khô", "kind": "Chụp đôi, nhóm bạn", "desc": "Thảm lá khô, áo len kem, khăn kẻ và chụp tai lông. Dành cho hai người: cặp đôi, bạn thân hoặc chị em.", "fit": "Kỷ niệm yêu nhau, chụp cùng bạn thân.", "has": "Lá khô, áo len, khăn kẻ, chụp tai lông, vương miện lá.", "pack": "Gói Thơ", "svc": "chu-de", "thumb": "img/p34.webp", "pics": ["img/p33.webp", "img/p41.webp", "img/p56.webp", "img/p34.webp", "img/p49.webp"]}], "packs": [{"id": "xinh", "name": "Gói Xinh", "price": 699000, "time": "60 phút"}, {"id": "tho", "name": "Gói Thơ", "price": 1199000, "time": "90 phút"}, {"id": "nang-tho", "name": "Gói Nàng thơ", "price": 1899000, "time": "150 phút"}], "quiz": [{"q": "Bạn chụp ảnh để làm gì?", "o": [{"t": "Mừng sinh nhật", "img": "img/p02.webp", "c": ["doi-muoi", "bong-bay"]}, {"t": "Đổi ảnh đại diện", "img": "img/p27.webp", "c": ["chan-dung", "hoa-cuc"]}, {"t": "Kỷ niệm với người thương", "img": "img/p33.webp", "c": ["thu-la"]}, {"t": "Có bộ ảnh nghệ thuật", "img": "img/p53.webp", "c": ["vuon-reu", "co-phong"]}]}, {"q": "Màu nào làm bạn mê nhất?", "o": [{"t": "Đỏ rực", "img": "img/p45.webp", "c": ["bong-bay", "blazer"]}, {"t": "Xanh denim", "img": "img/p04.webp", "c": ["doi-muoi"]}, {"t": "Trắng kem", "img": "img/p23.webp", "c": ["cay-thong", "co-phong", "chan-dung"]}, {"t": "Xanh rêu", "img": "img/p58.webp", "c": ["vuon-reu", "hoa-cuc"]}]}, {"q": "Vibe của bạn hôm nay?", "o": [{"t": "Nghịch ngợm đáng yêu", "img": "img/p55.webp", "c": ["doi-muoi", "bong-bay", "cay-thong"]}, {"t": "Dịu dàng mơ màng", "img": "img/p37.webp", "c": ["hoa-cuc", "vuon-reu"]}, {"t": "Cá tính sang chảnh", "img": "img/p57.webp", "c": ["blazer", "chan-dung"]}, {"t": "Cổ điển thanh lịch", "img": "img/p31.webp", "c": ["co-phong", "thu-la"]}]}], "phone": "093 141 95 38", "zalo": "https://zalo.me/0931419538", "mess": "https://m.me/61590492897254"};
+(function(){
+"use strict";
+const L = window.LA;
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+const vnd = n => n.toLocaleString("vi-VN").replace(/,/g,".") + "đ";
+const cById = id => L.concepts.find(c => c.id === id);
+const pById = id => L.packs.find(p => p.id === id);
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---------- hero headline: words rise in turn ---------- */
+$$(".words").forEach(h => {
+  let i = 0;
+  const wrap = node => {
+    const frag = document.createDocumentFragment();
+    node.textContent.split(/(\s+)/).forEach(w => {
+      if (!w.trim()){ frag.appendChild(document.createTextNode(w)); return; }
+      const s = document.createElement("span"); s.className = "w"; s.textContent = w; s.style.animationDelay = (i++ * 70) + "ms"; frag.appendChild(s);
+    });
+    node.replaceWith(frag);
+  };
+  h.setAttribute("aria-label", h.textContent);
+  [...h.childNodes].forEach(n => n.nodeType === 3 ? wrap(n) : [...n.childNodes].forEach(c => c.nodeType === 3 && wrap(c)));
+});
+
+/* ---------- concept cards: filter + photos cycle on hover ---------- */
+$$("#svc-chips .chip").forEach(c => c.addEventListener("click", () => {
+  $$("#svc-chips .chip").forEach(x => x.setAttribute("aria-pressed", x === c ? "true" : "false"));
+  $$(".card").forEach((card, i) => {
+    const show = c.dataset.s === "all" || card.dataset.svc === c.dataset.s;
+    card.hidden = !show;
+    if (show && !reduce) card.animate([{opacity:0, transform:"translateY(20px)"},{opacity:1, transform:"none"}], {duration:450, delay:i*40, easing:"ease-out", fill:"backwards"});
+  });
+}));
+$$(".card").forEach(card => {
+  const imgs = $$(".card-imgs img", card), dots = $$(".card-dots i", card);
+  let k = 0, t = null;
+  const go = n => { imgs[k].classList.remove("on"); dots[k].classList.remove("on"); k = n % imgs.length; imgs[k].classList.add("on"); dots[k].classList.add("on"); };
+  card.addEventListener("mouseenter", () => { if (reduce) return; go(k + 1); t = setInterval(() => go(k + 1), 1100); });
+  card.addEventListener("mouseleave", () => { clearInterval(t); });
+});
+
+/* ---------- polaroid board: drag and shuffle ---------- */
+const board = $("#board");
+const pols = $$(".pol", board);
+const LAYOUT = [[6,16,-8],[42,13,6],[24,30,-3],[58,34,9],[8,38,4]];
+const LAYOUT_M = [[2,15,-8],[46,13,7],[20,28,-3],[50,40,8],[4,44,4]];
+let zTop = 10;
+function place(pol, x, y, r){ pol.style.left = x + "%"; pol.style.top = y + "%"; pol.style.rotate = r + "deg"; }
+const small = () => innerWidth < 640;
+pols.forEach((p, i) => { place(p, ...(small() ? LAYOUT_M : LAYOUT)[i]); p.style.zIndex = i + 1; });
+$("#shuffle").addEventListener("click", () => {
+  pols.forEach(p => { p.classList.add("move"); place(p, Math.random() * (small() ? 50 : 58), 12 + Math.random() * (small() ? 34 : 24), Math.round(Math.random() * 24 - 12)); p.style.zIndex = ++zTop; });
+  setTimeout(() => pols.forEach(p => p.classList.remove("move")), 800);
+});
+pols.forEach(p => {
+  let sx, sy, ox, oy, id = null;
+  p.addEventListener("pointerdown", e => {
+    id = e.pointerId; p.setPointerCapture(id); p.classList.add("drag"); p.style.zIndex = ++zTop;
+    sx = e.clientX; sy = e.clientY; ox = p.offsetLeft; oy = p.offsetTop;
+  });
+  p.addEventListener("pointermove", e => {
+    if (id !== e.pointerId) return;
+    const bw = board.clientWidth, bh = board.clientHeight;
+    const x = Math.max(-10, Math.min(bw - p.offsetWidth + 10, ox + e.clientX - sx));
+    const y = Math.max(-10, Math.min(bh - p.offsetHeight + 10, oy + e.clientY - sy));
+    p.style.left = (x / bw * 100) + "%"; p.style.top = (y / bh * 100) + "%";
+    p.style.rotate = Math.max(-12, Math.min(12, (e.clientX - sx) * .05)) + "deg";
+  });
+  const end = e => { if (id !== e.pointerId) return; id = null; p.classList.remove("drag"); };
+  p.addEventListener("pointerup", end); p.addEventListener("pointercancel", end);
+});
+
+/* ---------- gallery + lightbox ---------- */
+const chipsG = $$("#g-chips .chip");
+const mas = $("#masonry"), gMore = $("#g-more");
+$$("#masonry button").forEach((b,i) => { if (i >= 15) b.classList.add("more"); });
+function filterGallery(g){
+  chipsG.forEach(c => c.setAttribute("aria-pressed", c.dataset.g === g ? "true" : "false"));
+  $$("#masonry button").forEach(b => { b.hidden = !(g === "all" || b.dataset.g === g); });
+  const all = g === "all";
+  mas.classList.toggle("open", !all || mas.dataset.expanded === "1");
+  gMore.hidden = !all || mas.dataset.expanded === "1";
+}
+gMore.addEventListener("click", () => { mas.dataset.expanded = "1"; mas.classList.add("open"); gMore.hidden = true; });
+chipsG.forEach(c => c.addEventListener("click", () => filterGallery(c.dataset.g)));
+const lb = $("#lb"), lbImg = $("#lb-img");
+let lbList = [], lbIdx = 0;
+function lbShow(i){
+  lbIdx = (i + lbList.length) % lbList.length;
+  const img = lbList[lbIdx];
+  lbImg.src = img.src; lbImg.alt = img.alt;
+  lbImg.classList.remove("swap"); void lbImg.offsetWidth; lbImg.classList.add("swap");
+  $("#lb-count").textContent = (lbIdx + 1) + " / " + lbList.length;
+}
+function lbOpen(list, i){ lbList = list; lbShow(i); if (lb.showModal){ if (!lb.open) lb.showModal(); } else lb.setAttribute("open",""); }
+mas.addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const vis = $$("#masonry button").filter(x => !x.hidden && getComputedStyle(x).display !== "none");
+  lbOpen(vis.map(x => x.querySelector("img")), vis.indexOf(b));
+});
+$("#lb-prev").addEventListener("click", () => lbShow(lbIdx - 1));
+$("#lb-next").addEventListener("click", () => lbShow(lbIdx + 1));
+lb.addEventListener("keydown", e => { if (e.key === "ArrowLeft") lbShow(lbIdx - 1); if (e.key === "ArrowRight") lbShow(lbIdx + 1); });
+let tx = null;
+lb.addEventListener("touchstart", e => { tx = e.touches[0].clientX; }, {passive:true});
+lb.addEventListener("touchend", e => { if (tx === null) return; const d = e.changedTouches[0].clientX - tx; if (Math.abs(d) > 40) lbShow(lbIdx + (d < 0 ? 1 : -1)); tx = null; });
+$("#lb-close").addEventListener("click", () => lb.close ? lb.close() : lb.removeAttribute("open"));
+lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
+/* ---------- booking summary ---------- */
+const form = $("#bk");
+const fConcept = $("#f-concept");
+function val(name){ const el = form.querySelector(`input[name="${name}"]:checked`); return el ? el.value : ""; }
+function setRadio(name, v){ const el = form.querySelector(`input[name="${name}"][value="${v}"]`); if (el) el.checked = true; }
+function people(){ const n = parseInt(val("people") || "1", 10); return isNaN(n) ? 1 : n; }
+function total(){ const p = pById(val("pack")); return p ? p.price + Math.max(0, people()-1) * 300000 : 0; }
+function updatePick(){
+  const c = cById(fConcept.value), p = pById(val("pack")), n = people();
+  $("#pick-name").textContent = c ? c.name : "Ý tưởng riêng";
+  $("#pick-img").src = c ? c.thumb : L.concepts[0].thumb;
+  $("#pick-meta").textContent = `${p ? p.name + " · " + p.time : ""} · ${n >= 4 ? "4 người trở lên" : n + " người"}`;
+  $("#pick-total").textContent = `Tạm tính ${vnd(total())}${n >= 4 ? " trở lên" : ""}`;
+}
+form.addEventListener("change", updatePick);
+$$("[data-pick]").forEach(a => a.addEventListener("click", () => { fConcept.value = a.dataset.pick; updatePick(); }));
+$$("[data-pack]").forEach(a => a.addEventListener("click", () => { setRadio("pack", a.dataset.pack); updatePick(); }));
+const today = new Date(); today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+$("#f-date").min = today.toISOString().slice(0,10);
+updatePick();
+
+function fmtDate(s){ if(!s) return ""; const [y,m,d] = s.split("-"); return `${d}/${m}/${y}`; }
+function message(b){
+  const c = cById(b.concept), p = pById(b.pack);
+  return `Chào La studio, mình muốn đặt lịch chụp:\n- Họ tên: ${b.name}\n- SĐT/Zalo: ${b.phone}\n- Ngày: ${fmtDate(b.date)}, lúc ${b.slot}\n- Concept: ${c ? c.name : "Ý tưởng riêng"}\n- Gói: ${p ? p.name : ""} (${b.people === "4" ? "4 người trở lên" : b.people + " người"})\n- Tạm tính: ${vnd(b.total)}` + (b.note ? `\n- Ghi chú: ${b.note}` : "");
+}
+
+/* ---------- storage: shared db when the viewer provides it, this browser otherwise ---------- */
+let dbP = null;
+function getDb(){
+  if (!dbP) dbP = (window.claude && window.claude.use) ? window.claude.use("db").catch(() => null) : Promise.resolve(null);
+  return dbP;
+}
+const LS = "la-bookings";
+function lsRead(){ try { return JSON.parse(localStorage.getItem(LS) || "[]"); } catch(e){ return []; } }
+function lsWrite(a){ try { localStorage.setItem(LS, JSON.stringify(a)); } catch(e){} }
+
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  const err = $("#f-err");
+  const b = {
+    name: $("#f-name").value.trim(), phone: $("#f-phone").value.trim(), date: $("#f-date").value,
+    slot: val("slot"), concept: fConcept.value, pack: val("pack"), people: val("people"),
+    note: $("#f-note").value.trim().slice(0, 600), status: "new", createdAt: Date.now()
+  };
+  b.total = total();
+  const miss = [];
+  if (!b.name) miss.push("họ tên");
+  if (!/^[0-9 +().-]{8,15}$/.test(b.phone)) miss.push("số điện thoại hợp lệ");
+  if (!b.date) miss.push("ngày chụp");
+  if (miss.length){ err.textContent = "Bạn điền giúp " + miss.join(", ") + " nhé."; err.hidden = false; return; }
+  err.hidden = true;
+  const btn = $("#f-submit"); btn.disabled = true; btn.textContent = "Đang gửi…";
+  let saved = false;
+  try {
+    const db = await getDb();
+    if (db){ await db.collection("bookings").add(b); saved = true; }
+  } catch(ex){ saved = false; }
+  if (!saved){ const a = lsRead(); a.unshift(Object.assign({id: "l" + b.createdAt}, b)); lsWrite(a); renderLocal(); }
+  btn.disabled = false; btn.textContent = "Gửi yêu cầu đặt lịch";
+  $("#done-title").textContent = saved ? "Nhà La đã nhận yêu cầu" : "Gửi tin nhắn này để giữ lịch";
+  $("#done-text").textContent = saved
+    ? "Studio sẽ nhắn bạn qua Zalo để xác nhận. Muốn giữ lịch nhanh hơn, gửi luôn tin nhắn dưới đây cho studio."
+    : `Yêu cầu chưa tới được studio từ trang này. Bạn sao chép tin nhắn và gửi qua Zalo ${L.phone} hoặc Messenger nhé.`;
+  $("#done-msg").textContent = message(b);
+  form.hidden = true; $("#done").hidden = false;
+  $("#done").scrollIntoView({block:"start", behavior: reduce ? "auto" : "smooth"});
+});
+$("#again").addEventListener("click", () => { form.reset(); $("#f-date").min = today.toISOString().slice(0,10); updatePick(); $("#done").hidden = true; form.hidden = false; });
+
+function copy(text, btn, label){
+  const done = ok => { btn.textContent = ok ? "Đã sao chép" : "Chọn và sao chép thủ công"; setTimeout(() => btn.textContent = label, 2200); };
+  try { navigator.clipboard.writeText(text).then(() => done(true), () => done(false)); } catch(e){ done(false); }
+}
+$("#copy-msg").addEventListener("click", e => copy($("#done-msg").textContent, e.currentTarget, "Sao chép tin nhắn"));
+$("#copy-phone").addEventListener("click", e => copy(L.phone.replace(/ /g,""), e.currentTarget, "Sao chép số"));
+
+/* ---------- admin ---------- */
+const ST = {new:["Mới","st-new"], ok:["Đã xác nhận","st-ok"], done:["Đã chụp","st-done"], cancel:["Đã huỷ","st-cancel"]};
+let rows = [], stFilter = "all", mode = "local", dbRef = null;
+const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+function renderAdmin(){
+  const body = $("#adm-body");
+  const list = rows.filter(r => stFilter === "all" || r.status === stFilter);
+  const count = k => rows.filter(r => r.status === k).length;
+  $("#adm-stats").innerHTML = `<span>${rows.length} yêu cầu</span><span>${count("new")} mới</span><span>${count("ok")} đã xác nhận</span>`;
+  if (!list.length){
+    body.innerHTML = `<tr><td colspan="7" class="adm-empty">${rows.length ? "Không có yêu cầu ở trạng thái này." : "Chưa có yêu cầu nào. Khi khách gửi form Đặt lịch, yêu cầu sẽ xuất hiện ở đây."}</td></tr>`;
+    return;
+  }
+  body.innerHTML = list.map(r => {
+    const c = cById(r.concept), p = pById(r.pack), when = new Date(r.createdAt || 0);
+    const opts = Object.keys(ST).map(k => `<option value="${k}"${r.status===k?" selected":""}>${ST[k][0]}</option>`).join("");
+    const st = ST[r.status] || ST.new;
+    return `<tr><td>${when.toLocaleDateString("vi-VN")}<br><span class="muted">${when.toLocaleTimeString("vi-VN",{hour:"2-digit",minute:"2-digit"})}</span></td>
+<td><b>${esc(r.name)}</b><br>${esc(r.phone)}</td>
+<td>${esc(fmtDate(r.date))}<br>${esc(r.slot)} · ${esc(r.people === "4" ? "4+" : r.people)} người</td>
+<td>${esc(c ? c.name : "Ý tưởng riêng")}<br><span class="muted">${esc(p ? p.name : "")} · ${vnd(Number(r.total)||0)}</span></td>
+<td>${esc(r.note || "")}</td>
+<td><span class="st ${st[1]}">${st[0]}</span><br><label class="sr" for="s-${esc(r.id)}">Đổi trạng thái</label><select id="s-${esc(r.id)}" data-id="${esc(r.id)}" style="margin-top:8px">${opts}</select></td>
+<td><button class="del" type="button" data-del="${esc(r.id)}">Xoá</button></td></tr>`;
+  }).join("");
+}
+$("#adm-body").addEventListener("change", async e => {
+  const s = e.target.closest("select[data-id]"); if (!s) return;
+  const id = s.dataset.id;
+  if (mode === "db"){ try { await dbRef.doc(id).update({status: s.value}); } catch(ex){ $("#adm-note").textContent = "Chưa lưu được trạng thái. Thử lại sau ít phút."; } }
+  else { const a = lsRead(); const r = a.find(x => x.id === id); if (r){ r.status = s.value; lsWrite(a); renderLocal(); } }
+});
+let pendingDel = null;
+$("#adm-body").addEventListener("click", async e => {
+  const b = e.target.closest("[data-del]"); if (!b) return;
+  const id = b.dataset.del;
+  if (pendingDel !== id){ pendingDel = id; b.textContent = "Bấm lần nữa để xoá"; setTimeout(() => { if (pendingDel === id){ pendingDel = null; b.textContent = "Xoá"; } }, 3000); return; }
+  pendingDel = null;
+  if (mode === "db"){ try { await dbRef.doc(id).delete(); } catch(ex){} }
+  else { lsWrite(lsRead().filter(x => x.id !== id)); renderLocal(); }
+});
+$$("#adm-filter .chip").forEach(c => c.addEventListener("click", () => {
+  stFilter = c.dataset.s;
+  $$("#adm-filter .chip").forEach(x => x.setAttribute("aria-pressed", x === c ? "true" : "false"));
+  renderAdmin();
+}));
+function renderLocal(){ if (mode !== "local") return; rows = lsRead(); renderAdmin(); }
+renderLocal();
+
+(async function initAdmin(){
+  const db = await getDb();
+  if (!db){ $("#adm-note").textContent = "Bản xem thử: yêu cầu gửi từ trình duyệt này được lưu tại đây để bạn thử quy trình quản lý."; return; }
+  let canSee = true;
+  try {
+    const user = await window.claude.use("user");
+    if (user){ const ce = await user.canEdit(); canSee = !!(ce || await user.isOwner()); }
+  } catch(e){}
+  if (!canSee){
+    $("#adm-note").textContent = "Khu vực dành cho chủ studio. Đăng nhập bằng tài khoản quản lý để xem yêu cầu đặt lịch.";
+    $("#adm-body").innerHTML = `<tr><td colspan="7" class="adm-empty">Danh sách yêu cầu chỉ hiển thị cho chủ studio.</td></tr>`;
+    $("#adm-stats").innerHTML = "";
+    return;
+  }
+  mode = "db"; dbRef = db.collection("bookings");
+  $("#adm-note").textContent = "Yêu cầu mới hiện ở đây ngay khi khách gửi. Đổi trạng thái sau khi đã nhắn xác nhận qua Zalo.";
+  dbRef.orderBy("createdAt","desc").limit(500).onSnapshot(snap => {
+    rows = snap.docs.map(d => Object.assign({}, d.data(), {id: d.id}));
+    renderAdmin();
+  }, () => { $("#adm-note").textContent = "Mất kết nối tới danh sách. Tải lại trang để xem yêu cầu mới."; });
+})();
+
+
+/* ---------- concept detail dialog ---------- */
+const dlg = $("#dlg");
+function openDetail(id){
+  const c = cById(id); if (!c) return;
+  $("#dlg-kind").textContent = c.kind; $("#dlg-name").textContent = c.name; $("#dlg-desc").textContent = c.desc;
+  $("#dlg-fit").textContent = c.fit; $("#dlg-has").textContent = c.has; $("#dlg-pack").textContent = c.pack;
+  $("#dlg-pick").dataset.pick = c.id;
+  $("#dlg-photos").innerHTML = c.pics.map((src, i) => `<button type="button" aria-label="Phóng to ảnh ${i+1}"><img src="${src}" alt="${c.name}, ảnh ${i+1}"></button>`).join("");
+  if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open","");
+}
+$$("[data-detail]").forEach(b => b.addEventListener("click", () => openDetail(b.dataset.detail)));
+$$("[data-detail-img]").forEach(b => b.addEventListener("click", () => openDetail(b.dataset.detailImg)));
+$("#dlg-x").addEventListener("click", () => dlg.close());
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+$("#dlg-photos").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const list = $$("#dlg-photos button");
+  dlg.close(); lbOpen(list.map(x => x.querySelector("img")), list.indexOf(b));
+});
+
+/* ---------- booking wizard ---------- */
+const steps = $$(".step", form), stepTabs = $$(".steps li", form);
+let cur = 1;
+function showStep(n, focus){
+  cur = n;
+  steps.forEach(s => { const on = +s.dataset.step === n; s.hidden = !on; if (on && !reduce){ s.classList.remove("in"); void s.offsetWidth; s.classList.add("in"); } });
+  stepTabs.forEach(t => { const k = +t.dataset.st; t.classList.toggle("on", k === n); t.classList.toggle("done", k < n); });
+  if (focus){ const f = $(`.step[data-step="${n}"] input:not([type=radio]), .step[data-step="${n}"] input`, form); if (f) f.focus({preventScroll:true}); }
+}
+$$("[data-go]", form).forEach(b => b.addEventListener("click", () => {
+  const n = +b.dataset.go;
+  if (n === 3 && !$("#f-date").value){ $("#f-err2").hidden = false; $("#f-date").focus(); return; }
+  $("#f-err2").hidden = true;
+  showStep(n, true);
+}));
+$("#f-date").addEventListener("change", () => { if ($("#f-date").value) $("#f-err2").hidden = true; });
+form.addEventListener("change", e => { if (e.target.name === "cpick"){ fConcept.value = e.target.value; updatePick(); } });
+function syncPick(){
+  const r = $(`input[name="cpick"][value="${fConcept.value}"]`, form); if (r) r.checked = true;
+  $("#bb-img").src = $("#pick-img").src;
+  $("#bb-name").textContent = $("#pick-name").textContent;
+  const p = pById(val("pack"));
+  $("#bb-total").textContent = (p ? p.name + " · " : "") + $("#pick-total").textContent.replace("Tạm tính ", "");
+}
+new MutationObserver(syncPick).observe($("#pick-total"), {childList:true, characterData:true, subtree:true});
+new MutationObserver(syncPick).observe($("#pick-name"), {childList:true, characterData:true, subtree:true});
+syncPick();
+document.addEventListener("click", e => {
+  const pick = e.target.closest("[data-pick], #dlg-pick, [data-quiz-pick]");
+  if (pick){
+    const id = pick.dataset.pick || pick.dataset.quizPick;
+    if (id){ fConcept.value = id; updatePick(); }
+    if (dlg.open) dlg.close();
+    showStep(2); return;
+  }
+  if (e.target.closest("[data-pack]")) showStep(1);
+});
+$("#again").addEventListener("click", () => { showStep(1); syncPick(); });
+
+/* ---------- quiz ---------- */
+const quiz = $("#quiz");
+let score = {}, qi = 0;
+function renderQ(){
+  const q = L.quiz[qi];
+  quiz.innerHTML = `<p class="q-step"><span class="q-dots">${L.quiz.map((_, i) => `<i class="${i <= qi ? "on" : ""}"></i>`).join("")}</span> Câu ${qi+1} / ${L.quiz.length}</p>
+  <p class="q-title q-anim">${q.q}</p>
+  <div class="q-opts q-anim">${q.o.map((o, j) => `<button class="q-opt" type="button" data-o="${j}"><img src="${o.img}" alt="">${o.t}</button>`).join("")}</div>`;
+}
+function renderResult(){
+  const best = Object.keys(score).sort((a, b) => score[b] - score[a])[0] || "doi-muoi";
+  const c = cById(best);
+  quiz.innerHTML = `<p class="q-step"><span class="q-dots">${L.quiz.map(() => `<i class="on"></i>`).join("")}</span> Kết quả</p>
+  <div class="q-res q-anim"><img src="${c.pics[0]}" alt="${c.name}"><div style="display:grid;gap:8px"><p>Concept dành cho bạn là</p><p class="q-title">${c.name}</p><p>${c.desc}</p></div></div>
+  <div class="cta-row q-anim"><a class="btn btn-pink" href="#dat-lich" data-quiz-pick="${c.id}">Đặt concept này</a><button class="btn btn-ghost" type="button" data-quiz-detail="${c.id}">Xem chi tiết</button><button class="btn btn-ghost btn-sm" type="button" data-quiz-again>Làm lại</button></div>`;
+  const r = quiz.getBoundingClientRect(); burst(r.left + r.width / 2, r.top + 80, 60);
+}
+quiz.addEventListener("click", e => {
+  const o = e.target.closest(".q-opt");
+  if (o){
+    L.quiz[qi].o[+o.dataset.o].c.forEach((id, k) => { score[id] = (score[id] || 0) + (k === 0 ? 2 : 1); });
+    o.style.background = "var(--pink-soft)";
+    setTimeout(() => { qi++; qi < L.quiz.length ? renderQ() : renderResult(); }, reduce ? 0 : 240);
+    return;
+  }
+  const d = e.target.closest("[data-quiz-detail]");
+  if (d){ openDetail(d.dataset.quizDetail); return; }
+  if (e.target.closest("[data-quiz-again]")){ score = {}; qi = 0; renderQ(); }
+});
+
+/* ---------- summary bump ---------- */
+const ticket = $("#ticket");
+const bump = () => { if (reduce) return; ticket.classList.remove("bump"); void ticket.offsetWidth; ticket.classList.add("bump"); };
+form.addEventListener("change", bump);
+
+/* ---------- confetti ---------- */
+const cv = $("#confetti"), cx = cv.getContext("2d");
+let parts = [], running = false;
+const COLORS = ["#FF5FA2","#3D6BFF","#FFE27A","#FFB3D1","#B9D0FF"];
+function burst(x, y, n){
+  if (reduce) return;
+  cv.width = innerWidth * devicePixelRatio; cv.height = innerHeight * devicePixelRatio;
+  for (let i = 0; i < n; i++){
+    const a = Math.random() * Math.PI * 2, v = 3 + Math.random() * 8;
+    parts.push({x, y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 5, r: 4 + Math.random() * 5, c: COLORS[i % COLORS.length], rot: Math.random() * 6, vr: Math.random() * .3 - .15, life: 0, sq: Math.random() > .5});
+  }
+  if (!running){ running = true; requestAnimationFrame(tick); }
+}
+function tick(){
+  const d = devicePixelRatio;
+  cx.clearRect(0, 0, cv.width, cv.height);
+  parts.forEach(p => {
+    p.vy += .28; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.rot += p.vr; p.life++;
+    cx.save(); cx.translate(p.x * d, p.y * d); cx.rotate(p.rot); cx.fillStyle = p.c;
+    if (p.sq) cx.fillRect(-p.r * d / 2, -p.r * d / 4, p.r * d, p.r * d / 2); else { cx.beginPath(); cx.arc(0, 0, p.r * d / 2, 0, 7); cx.fill(); }
+    cx.restore();
+  });
+  parts = parts.filter(p => p.y < innerHeight + 40 && p.life < 220);
+  if (parts.length) requestAnimationFrame(tick); else { running = false; cx.clearRect(0, 0, cv.width, cv.height); }
+}
+new MutationObserver(() => { if (!$("#done").hidden) burst(innerWidth / 2, innerHeight * .35, 130); }).observe($("#done"), {attributes:true, attributeFilter:["hidden"]});
+
+/* ---------- nav shadow + booking bar visibility ---------- */
+const nav = $("#nav"), bbar = $("#bbar"), book = $("#dat-lich");
+let bookIn = false;
+function onScroll(){
+  nav.classList.toggle("scrolled", scrollY > 10);
+  bbar.classList.toggle("off", scrollY < innerHeight * .6 || bookIn);
+}
+if ("IntersectionObserver" in window) new IntersectionObserver(es => { bookIn = es[0].isIntersecting; onScroll(); }, {rootMargin: "-20% 0px -20% 0px"}).observe(book);
+addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+/* ---------- reveal ---------- */
+if (!reduce && "IntersectionObserver" in window){
+  const io = new IntersectionObserver(es => es.forEach(en => {
+    if (!en.isIntersecting) return;
+    const el = en.target, sib = $$(".rv", el.parentElement), i = Math.max(0, sib.indexOf(el));
+    el.style.transitionDelay = (Math.min(i, 5) * 80) + "ms";
+    el.classList.remove("pre"); io.unobserve(el);
+  }), {rootMargin: "0px 0px -8% 0px"});
+  $$(".rv").forEach(el => { if (el.getBoundingClientRect().top > innerHeight * 0.95){ el.classList.add("pre"); io.observe(el); } });
+}
+
+/* ---------- ripple ---------- */
+document.addEventListener("pointerdown", e => {
+  const b = e.target.closest(".btn"); if (!b || reduce) return;
+  const r = b.getBoundingClientRect(), s = Math.max(r.width, r.height);
+  const d = document.createElement("span");
+  d.className = "ripple"; d.style.cssText = `width:${s}px;height:${s}px;left:${e.clientX - r.left - s/2}px;top:${e.clientY - r.top - s/2}px`;
+  b.appendChild(d); setTimeout(() => d.remove(), 650);
+});
+})();
+</script>
+</body></html>
